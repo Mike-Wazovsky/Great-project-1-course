@@ -3,11 +3,13 @@
 #include <string>
 
 void macaftc::View::Start_game() {
+    // TODO: "\n" >> std::endl;
     std::cout << "\n";
 }
 
 void macaftc::View::Start_move(std::string move) {
     std::cout << move << '\n';
+    // (y/N)
     std::cout << "What will you choose?\nYes or No?\n";
 }
 

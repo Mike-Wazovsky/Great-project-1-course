@@ -26,6 +26,9 @@ namespace macaftc {
         }
     }
 
+    // give?
+    // for non bool: get/set
+    // maybe is_game_ended
     bool Game::give_end_of_game() const {
         return end_of_game;
     }

@@ -20,6 +20,12 @@ namespace macaftc {
         }
     };
     struct Plot{
+	// TODO: check that out
+	// Plot(event1, event2, event3)
+	// Plot(Event ...events): events(events...) {
+	//	
+	// }
+
         std::vector<Event> events;
         size_t cnt = 0;
 

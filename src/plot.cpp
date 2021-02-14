@@ -11,11 +11,7 @@ namespace macaftc {
         if (plots[story].cnt != plots[story].events.size()) {
             return plots[story].last();
         }
-        else {
-            return Event("Sorry, our story is ended",0,0, true);
-        }
-        //int story = 0;
-        //return plots[story].last();
+        return Event("Sorry, our story is ended",0,0, true);
     }
 }
 
