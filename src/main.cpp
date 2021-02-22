@@ -1,26 +1,24 @@
-#include <iostream>
 #include "game.h"
 #include "controller.h"
 #include "view.h"
+#include "story.h"
 
 int main() {
-    macaftc::Game game(50);
-    macaftc::View view;
-    macaftc::Controller controller;
-    macaftc::Plot plot;
-    macaftc::Base base;
-    macaftc::Event first("Are yore ready to become a king today", 20, -20, 0);
-    plot.add_event(first);
-    base.add_plot(plot);
+    Game game(50);
+    View view;
+    Controller controller;
+    Base base = first_myth();
 
     view.Start_game();
-    while (!game.give_end_of_game()) {
-        game.event = base.give_a_story();
-        view.Start_move(game.event.s);
-        bool f = controller.Move();
-        game.Move(f);
-        game.Check_end();
+    game.event = base.give_a_story(); // игра получает событие
+    while (!game.is_game_ended()) {
+        view.Start_move(game.event.get_story()); // выводит событие
+        bool desicion = controller.Move(); // получает ответ игрока
+        game.change_resourses(desicion); // меняет ресурсы
+        base.count_a_conclusion(desicion); // смещает историю в нужном направлении
+        game.event = base.give_a_story(); // игра получает событие
+        game.check_end(); // проверяет на концвоку
     }
-    view.End_game(game.end_of_story);
+    view.End_game(game.get_end_of_story());
     return 0;
 }
