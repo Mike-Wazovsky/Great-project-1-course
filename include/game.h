@@ -1,22 +1,28 @@
 #pragma once
 
-#include "plot.h"
+#include <utility>
+#include <string>
+#include <fstream>
+#include "json.hpp"
 
+using json = nlohmann::json;
 
 struct Game {
-    // TODO: hide internal fields, convert to class for simplicity
 private:
-    bool end_of_game = false; //1 - game over
-    int determination{50}; // resources
-    std::string end_of_story;
+    int determination = 0; // resources
+    json j;
+    std::string it;
 public:
-    Event event = {"If you see this, something goes wrong", 0, 0, false};
-    Game(int determination_) : determination(determination_) {
+    explicit Game(int k) {
+        std::string path = "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/TESTS/myth_" + std::to_string(k) + ".json";
+        std::ifstream plots(path);
+        plots >> j;
     }
-
-    void change_resourses(bool f);
-    void check_end();
     bool is_game_ended() const;
-    std::string get_end_of_story();
+    void move(bool);
+    std::string start_game();
+    std::string get_story();
+    void check_end();
+    void change_resourses(bool f);
 };
 

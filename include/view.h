@@ -3,9 +3,9 @@
 #include <string>
 struct View {
 public:
-    void Start_game();
-    void Start_move(std::string move);
+    void start_game(std::string);
+    void start_move(std::string move);
     //TODO add a result_move inside main.cpp
-    void Result_move(std::string result);
-    void End_game(std::string end);
+   // void Result_move(std::string result);
+    void end_game(std::string end);
 };

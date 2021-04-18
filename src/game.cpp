@@ -1,34 +1,49 @@
 #include "game.h"
 
 void Game::change_resourses(bool f) {
+    if (it.empty() || j["events"][it]["is_end"]){
+        return;
+    }
     if (f) {
-        determination += event.determination_if_yes;
+        determination += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["determination"]);
     } else {
-        determination += event.determination_if_no;
+        determination += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["determination"]);
     }
 }
 
 void Game::check_end() {
-    if (determination >= 100) {
-        end_of_story = "You full of determination to start your way";
-        end_of_game = true;
+    if (determination >= j["resources"]["determination"]["highest_value"]) {
+        it = "die_high";
     }
-    if (determination <= 0) {
-        end_of_story = "You are not enough determined for adventure";
-        end_of_game = true;
-    }
-    if (event.is_it_the_end) {
-        end_of_story = event.s;
-        end_of_game = true;
+    if (determination <= j["resources"]["determination"]["lowest_value"]) {
+        it = "die_low";
     }
 }
 
 bool Game::is_game_ended() const {
-    return end_of_game;
+    return j["events"][it]["is_end"];
 }
 
-std::string Game::get_end_of_story() {
-    return end_of_story;
+void Game::move(bool choice) {
+    if (it.empty()) {
+        it = "event1";
+    }
+    else {
+        if (choice) {
+            it = j["events"][it]["routes"]["yes"]["next_event"];
+        }
+        else {
+            it = j["events"][it]["routes"]["no"]["next_event"];
+        }
+    }
 }
 
+std::string Game::start_game() {
+    determination = j["resources"]["determination"]["start_value"];
+    it = "event1";
+    return j["declaring_character"];
+}
 
+std::string Game::get_story() {
+    return j["events"][it]["text"];
+}

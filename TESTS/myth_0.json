@@ -1,0 +1,48 @@
+{
+  "plot_title": "Миф Нулевой",
+  "declaring_character": "Вы всесильный Бог Дедлайнововремязакрыватель, у вас есть преданный друг Виталя.",
+  "events": {
+    "event1": {
+      "is_end": false,
+      "text": "Виталя просит вас вместо учебы сходить с ним на футбол, играть против экономистов. Вы выполните просьбу Витали?",
+      "routes": {
+        "yes": {
+          "next_event": "Win",
+          "resource_change": {
+            "determination": 10
+          }
+        },
+        "no": {
+          "next_event": "die",
+          "resource_change": {
+            "determination": -10
+          }
+        }
+      }
+    },
+    "die": {
+      "is_end": true,
+      "text": "Направляясь утром к рабочему столу, вы запнулись о провод. Это была нелепая смерть."
+    },
+    "die_determination_high": {
+      "is_end": true,
+      "text": "Вы погибли от рук уличного грабителя."
+    },
+    "die_determination_low": {
+      "is_end": true,
+      "text": "Вы погибли в перестрелке."
+    },
+    "win": {
+      "is_end": true,
+      "text": "Эта была великолепная игра! После нее вы успели закрыть все дедлайны, вы ведь все - таки Бог. Но даже и Богам необходимо иногда отдыхать."
+    }
+  },
+
+  "resources": {
+    "determination": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    }
+  }
+}

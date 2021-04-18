@@ -20,8 +20,8 @@ else()
 endif (MSVC)
 
 add_executable(macaftc src/main.cpp)
-target_sources(macaftc PRIVATE src/game.cpp src/view.cpp src/plot.cpp src/controller.cpp src/story.cpp)
+target_sources(macaftc PRIVATE src/game.cpp src/view.cpp src/controller.cpp)
 
 include_directories(include)
 
-add_library(common OBJECT src/main.cpp src/game.cpp src/view.cpp src/plot.cpp src/controller.cpp src/story.cpp)
+add_library(common OBJECT src/main.cpp src/game.cpp src/view.cpp src/controller.cpp)

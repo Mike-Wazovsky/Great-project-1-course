@@ -1,7 +1,7 @@
 #include "controller.h"
 #include <iostream>
 
-bool Controller::Move() {
+bool Controller::move() {
     std::string s;
     std::cin >> s;
     // return s == "Yes;

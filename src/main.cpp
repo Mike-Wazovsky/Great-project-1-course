@@ -1,24 +1,29 @@
 #include "game.h"
 #include "controller.h"
 #include "view.h"
-#include "story.h"
+#include <cstdlib>
+
+const int the_number_of_plots = 2;
+
+int get_the_number_plot(int k) {
+    return std::rand() % k;
+}
 
 int main() {
-    Game game(50);
+    int number_plot = get_the_number_plot(the_number_of_plots);
+
+    Game game(number_plot);
     View view;
     Controller controller;
-    Base base = first_myth();
 
-    view.Start_game();
-    game.event = base.give_a_story(); // игра получает событие
+    view.start_game(game.start_game());
     while (!game.is_game_ended()) {
-        view.Start_move(game.event.get_story()); // выводит событие
-        bool desicion = controller.Move(); // получает ответ игрока
-        game.change_resourses(desicion); // меняет ресурсы
-        base.count_a_conclusion(desicion); // смещает историю в нужном направлении
-        game.event = base.give_a_story(); // игра получает событие
-        game.check_end(); // проверяет на концвоку
+        view.start_move(game.get_story());
+        bool choice = controller.move();
+        game.change_resourses(choice);
+        game.move(choice);
+        game.check_end();
     }
-    view.End_game(game.get_end_of_story());
+    view.end_game(game.get_story());
     return 0;
 }
