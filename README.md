@@ -6,43 +6,38 @@
 
 Для создания UML схем мы использовали Object diagram. Если на простом примере, то это выглядело так:
 
-![UML model](http://www.plantuml.com/plantuml/png/RLDDRjDW5Dpx58-icqgv0FGg1R91j4KqB112gkCY5WwAg5WI8Gw0zCMDgPlOpXNctQWp-cJ7aUgDfVTcvitx-SwkP-SVPvyktYTNhzzDtymClr7vBLQUOOSI1LeyThb93_gB6gNV-DmNVUmFeMjIDWX9Sd7-uLaf-v8OxZmt59vI8aM5dI_GUCuaVX9pR_Wb6P827j6W5PNu6qPhN-A1yIsBvum7dwEKmabYdXaKIKt2ycROYoLBQBeQ6r8pLRb3HNOWUtcQV8sU9p8up4I9rbE5Ulq2TQo1bcNzEskisHGZtz1YGwog2zcWGgrVCBybT8ur4JlQPUAUqk5Wj6MsGc7-0rk2r7cDAfP1SNgON8wzH2Ik_dkFlg2DRE0VrQkki-7Er2HM18WNKAXHNufliYWncTwQqZAi3b5JEfeXFZin6J4yI0QDbYolwgMDXkBUDlBzJopJZBHLZQFKJP0OV4dHWxL-4yDxej-e4GOQXJHGQLHH2utK-hc-iCGaugdIiMOPJNl6u3xoxN1FgYz0AjncU8EUQs6Yeb2ynurzBZPbuksgsHLQqGF-KwVF8A2E9jXMToQeXQqO5aATwWYednCH-day-vB6uvTyaHFzRNHvDJhQS1V_FBqU7J_Di-dbMxttu-y9)
+![UML model](http://www.plantuml.com/plantuml/png/LLDRRjD05FttAYxvRYBO07GhXLgYYAI86b25aE8On8UB8Yf-ArQ0v4nTcAP-RE7CZZX7eqbIHPRZE_VSyvYPuulYv7tnOVusEt_v9dzLsFooUFqqVPoUvUbl_Z5V5C_IrwUpHPRDJzx5TlkSuJhK1XTAtF7nU0XNw4EDUyDF3BWr_C8TMZoWmJrwbfoUi6Ir2slyOtqRbaGuD675AYSSMQWCAfIckM4LhWoZG6W9w1D5IsGbacjuWXk2rxFiIvH84n9umxAW3PoM-IivBLHXnUA0ph0rBME38NoNB9AB4mFxgoEveqK97SbRqOhN2CCGDKLBxSpmHo339jJoQ-XbXyz89slEH4StIxdPYOpnIkU11Ojp2M1f5uGJF0gZV4aLawH-4xzwPQmKhvUldXh2Lpd5HcPenUDMNjMPI5OiEWi_i6LFhqJW8mlSpDB-rXWrGgErImdC72YYihrw-1V96m-BZ2cLvY0L1wNYnHVJaL2QJkAU67vhj1PZXdnHWKoN62FQzYT7PjHGggyzF6sXJhldLDwtJKsQgC1RFAOqUeD1y0P_sR1Ru7SNHGpOfA3HgTUZLuSmfXn9KBEZsUrll2FJwVHvkaNn5KkJo_nYeemULnVd4zFrEyuNfxoU_m40)
 
 Это было удобно с точки зрения кода, ведь можно отдельно создать блоки, а затем соединить их стрелочкими в нужном порядке:
 
 ```uml
 @startuml
-object МифНулевой
-object 1
-object Смерть
-object Победа
 
-map МифНулевой {
- Вы всесильный Бог Дедлайнововремязакрыватель,
- у вас есть преданный друг Виталя.
+object myth0
+object die
+object event1
+object win
+
+map myth0 {
+Вы всесильный Бог Дедлайнововремязакрыватель, у вас есть преданный друг Виталя.
 }
 
-map 1 {
- Виталя просит вас вместо учебы сходить с ним на футбол,
- играть против экономистов.
- Вы выполните просьбу Витали?
+map die {
+Направляясь утром к рабочему столу, вы запнулись о провод. Это была нелепая смерть.
 }
 
-map Смерть {
- Направляясь утром к рабочему столу, вы запнулись о провод.
- Это была нелепая смерть.
+map event1 {
+Виталя просит вас вместо учебы сходить с ним на футбол, играть против экономистов. Вы выполните просьбу Витали?
 }
 
-map Победа {
- Эта была великолепная игра! 
- После нее вы успели закрыть все дедлайны,
- вы ведь все-таки Бог.
- Но даже и Богам необходимо иногда отдыхать.
+map win {
+Эта была великолепная игра! После нее вы успели закрыть все дедлайны, вы ведь все - таки Бог. Но даже и Богам необходимо иногда отдыхать.
 }
 
-МифНулевой --> 1
-1 --> "no" Смерть
-1 --> "yes" Победа
+myth0 ---> event1
+event1 ---> "yes" win
+event1 ---> "no" die
+
 @enduml
 ```
 
