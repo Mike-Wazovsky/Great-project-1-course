@@ -17,7 +17,7 @@ public:
         std::string path = "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/TESTS/myth_" + std::to_string(k) + ".json";
         std::ifstream plots(path);
         plots >> j;
-        // TODO close
+        // TODO close and exceptions
     }
     bool is_game_ended() const;
     void move(bool);
