@@ -3,6 +3,7 @@
 #include <utility>
 #include <string>
 #include <fstream>
+#include "uml.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -14,11 +15,14 @@ private:
     std::string it;
 public:
     explicit Game(int k) {
-        std::string path = "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/TESTS/myth_" + std::to_string(k) + ".json";
+        std::string path = "/home/osboxes/project/Great-project-1-course/TESTS/myth_" + std::to_string(k) + ".json";
         std::ifstream plots(path);
         plots >> j;
         // TODO close and exceptions
     }
+
+    void to_uml(int k);
+
     bool is_game_ended() const;
     void move(bool);
     std::string start_game();

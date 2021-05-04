@@ -58,19 +58,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/149/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/151/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/149/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/osboxes/Desktop/Me/lab/2/Great-project-1-course
+CMAKE_SOURCE_DIR = /home/osboxes/project/Great-project-1-course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug
+CMAKE_BINARY_DIR = /home/osboxes/project/Great-project-1-course/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-b
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/149/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/151/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/149/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/151/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles /home/osboxes/project/Great-project-1-course/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -245,6 +245,36 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/uml.o: src/uml.cpp.o
+
+.PHONY : src/uml.o
+
+# target to build an object file
+src/uml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/uml.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/src/uml.cpp.o
+.PHONY : src/uml.cpp.o
+
+src/uml.i: src/uml.cpp.i
+
+.PHONY : src/uml.i
+
+# target to preprocess a source file
+src/uml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/uml.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/src/uml.cpp.i
+.PHONY : src/uml.cpp.i
+
+src/uml.s: src/uml.cpp.s
+
+.PHONY : src/uml.s
+
+# target to generate assembly for a file
+src/uml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/src/uml.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/src/uml.cpp.s
+.PHONY : src/uml.cpp.s
+
 src/view.o: src/view.cpp.o
 
 .PHONY : src/view.o
@@ -294,6 +324,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/uml.o"
+	@echo "... src/uml.i"
+	@echo "... src/uml.s"
 	@echo "... src/view.o"
 	@echo "... src/view.i"
 	@echo "... src/view.s"

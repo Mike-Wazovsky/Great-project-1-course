@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/src/controller.cpp" "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/controller.cpp.o"
-  "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/src/game.cpp" "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/game.cpp.o"
-  "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/src/main.cpp" "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/main.cpp.o"
-  "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/src/view.cpp" "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/view.cpp.o"
+  "/home/osboxes/project/Great-project-1-course/src/controller.cpp" "/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/controller.cpp.o"
+  "/home/osboxes/project/Great-project-1-course/src/game.cpp" "/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/game.cpp.o"
+  "/home/osboxes/project/Great-project-1-course/src/main.cpp" "/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/main.cpp.o"
+  "/home/osboxes/project/Great-project-1-course/src/uml.cpp" "/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/uml.cpp.o"
+  "/home/osboxes/project/Great-project-1-course/src/view.cpp" "/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir/src/view.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

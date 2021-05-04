@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/include
+CXX_INCLUDES = -I/home/osboxes/project/Great-project-1-course/include
 
 CXX_FLAGS = -g -Wall -Wextra -Werror -O2 -std=gnu++14
 

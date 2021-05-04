@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/149/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/151/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/149/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/151/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/osboxes/Desktop/Me/lab/2/Great-project-1-course
+CMAKE_SOURCE_DIR = /home/osboxes/project/Great-project-1-course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug
+CMAKE_BINARY_DIR = /home/osboxes/project/Great-project-1-course/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -95,14 +95,14 @@ clean: CMakeFiles/macaftc.dir/clean
 CMakeFiles/common.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target common"
 .PHONY : CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -122,14 +122,14 @@ CMakeFiles/common.dir/clean:
 CMakeFiles/macaftc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/macaftc.dir/build.make CMakeFiles/macaftc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9 "Built target macaftc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target macaftc"
 .PHONY : CMakeFiles/macaftc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/macaftc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/macaftc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/macaftc.dir/rule
 
 # Convenience name for target.

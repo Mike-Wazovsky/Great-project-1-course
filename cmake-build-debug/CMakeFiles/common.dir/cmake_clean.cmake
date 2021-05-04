@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/common.dir/src/controller.cpp.o"
   "CMakeFiles/common.dir/src/game.cpp.o"
   "CMakeFiles/common.dir/src/main.cpp.o"
+  "CMakeFiles/common.dir/src/uml.cpp.o"
   "CMakeFiles/common.dir/src/view.cpp.o"
 )
 

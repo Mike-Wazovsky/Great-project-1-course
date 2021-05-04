@@ -1,4 +1,4 @@
-/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir
-/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/CMakeFiles/macaftc.dir
+/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/common.dir
+/home/osboxes/project/Great-project-1-course/cmake-build-debug/CMakeFiles/macaftc.dir

@@ -1,6 +1,7 @@
 #include "game.h"
 #include "controller.h"
 #include "view.h"
+#include "uml.h"
 #include <cstdlib>
 
 const int the_number_of_plots = 2;
@@ -15,6 +16,8 @@ int main() {
     Game game(number_plot);
     View view;
     Controller controller;
+
+    game.to_uml(number_plot);
 
     view.start_game(game.start_game());
     while (!game.is_game_ended()) {

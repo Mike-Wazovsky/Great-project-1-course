@@ -1,4 +1,4 @@
-# Install script for directory: /home/osboxes/Desktop/Me/lab/2/Great-project-1-course
+# Install script for directory: /home/osboxes/project/Great-project-1-course
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/osboxes/Desktop/Me/lab/2/Great-project-1-course/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/osboxes/project/Great-project-1-course/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

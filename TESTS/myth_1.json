@@ -1,5 +1,5 @@
 {
-  "plot_title": "Миф первый",
+  "plot_title": "myth1",
   "declaring_character": "Вы величайший художник, скульптор и зодчий Афин, знаменитый Дедал, потомок Эрехтея.",
   "events": {
     "event1": {
@@ -193,7 +193,7 @@
           }
         },
         "no": {
-          "next_event": "Win",
+          "next_event": "win",
           "resource_change": {
             "determination": -10
           }
