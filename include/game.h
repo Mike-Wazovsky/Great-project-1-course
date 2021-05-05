@@ -1,24 +1,33 @@
-#ifndef PROJECT_GAME_H
-#define PROJECT_GAME_H
+#pragma once
 
-#include "game_fwd.h"
-#include "plot.h"
-#include "view.h" //?
+#include <utility>
+#include <string>
+#include <fstream>
+#include "uml.h"
+#include "json.hpp"
 
-namespace macaftc {
-    struct Game {
-        bool end_of_game = false; //1 - game over
-        int determination = 50; // resources
-        std::string end_of_story;
-        Event event = {"", 0, 0, 0};
+using json = nlohmann::json;
 
-    public:
-        Game(int determination_) : determination(determination_) {
-        }
-        void Move(bool f);
-        void Check_end();
-        bool give_end_of_game() const;
-    };
-}
+struct Game {
+private:
+    int determination = 0; // resources
+    json j;
+    std::string it;
+public:
+    explicit Game(int k) {
+        std::string path = "/home/osboxes/project/Great-project-1-course/TESTS/myth_" + std::to_string(k) + ".json";
+        std::ifstream plots(path);
+        plots >> j;
+        // TODO close and exceptions
+    }
 
-#endif //PROJECT_GAME_H
+    void to_uml(int k);
+
+    bool is_game_ended() const;
+    void move(bool);
+    std::string start_game();
+    std::string get_story();
+    void check_end();
+    void change_resourses(bool f);
+};
+

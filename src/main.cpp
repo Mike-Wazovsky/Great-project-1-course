@@ -1,26 +1,32 @@
-#include <iostream>
 #include "game.h"
 #include "controller.h"
 #include "view.h"
+#include "uml.h"
+#include <cstdlib>
+
+const int the_number_of_plots = 2;
+
+int get_the_number_plot(int k) {
+    return std::rand() % k;
+}
 
 int main() {
-    macaftc::Game game(50);
-    macaftc::View view;
-    macaftc::Controller controller;
-    macaftc::Plot plot;
-    macaftc::Base base;
-    macaftc::Event first("Are yore ready to become a king today", 20, -20, 0);
-    plot.add_event(first);
-    base.add_plot(plot);
+    int number_plot = get_the_number_plot(the_number_of_plots);
 
-    view.Start_game();
-    while (!game.give_end_of_game()) {
-        game.event = base.give_a_story();
-        view.Start_move(game.event.s);
-        bool f = controller.Move();
-        game.Move(f);
-        game.Check_end();
+    Game game(number_plot);
+    View view;
+    Controller controller;
+
+    game.to_uml(number_plot);
+
+    view.start_game(game.start_game());
+    while (!game.is_game_ended()) {
+        view.start_move(game.get_story());
+        bool choice = controller.move();
+        game.change_resourses(choice);
+        game.move(choice);
+        game.check_end();
     }
-    view.End_game(game.end_of_story);
+    view.end_game(game.get_story());
     return 0;
 }

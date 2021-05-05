@@ -1,16 +1,11 @@
-#ifndef PROJECT_VIEW_H
-#define PROJECT_VIEW_H
+#pragma once
 
 #include <string>
-
-namespace macaftc {
-    struct View {
-    public:
-        void Start_game();
-        void Start_move(std::string move);
-        void Result_move(std::string result);
-        void End_game(std::string end);
-    };
-}
-
-#endif //PROJECT_VIEW_H
+struct View {
+public:
+    void start_game(std::string);
+    void start_move(std::string move);
+    //TODO add a result_move inside main.cpp
+   // void Result_move(std::string result);
+    void end_game(std::string end);
+};
