@@ -1,4 +1,4 @@
-# Great-project-1-course
+# macaftc
 
 ## Инструкция по сборке игры
 
