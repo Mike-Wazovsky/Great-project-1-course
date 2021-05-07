@@ -1,5 +1,11 @@
 # Great-project-1-course
 
+## Инструкция по сборке игры
+
+Зайти в папку /build
+Ввести команду "cmake ..", затем "make"
+Запустить исполняемый файл: "./macaftc"
+
 ## UML
 
 ### Object diagram
