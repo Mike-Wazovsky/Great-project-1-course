@@ -1,7 +1,7 @@
 #include "game.h"
 
 void Game::to_uml(int k) {
-    std::string path = "/home/osboxes/project/Great-project-1-course/diagram_uml/myth_" + std::to_string(k) + ".txt";
+    std::string path = "../diagram_uml/myth_" + std::to_string(k) + ".txt";
     translation_from_json_to_uml(j, path);
 }
 
