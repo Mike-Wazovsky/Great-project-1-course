@@ -8,23 +8,6 @@
 
 using json = nlohmann::json;
 
-/*struct PlotSelection {
-private:
-    json j;
-    std::string it;
-public:
-    explicit PlotSelection() {
-        std::ifstream plots("../TESTS/plot_selection.json");
-        plots >> j;
-        // TODO close and exceptions
-    }
-    bool is_plot_selection_ended() const;
-    void move(bool);
-    std::string start_plot_selection();
-    std::string get_story();
-    void check_end();
-};*/
-
 struct Game {
 private:
     int resource1 = 0;
