@@ -1,4 +1,4 @@
-#include "uml.h"
+#include "include/uml.h"
 
 void add_objects(json & j, std::set<std::string> & objects, std::string e) {
     objects.insert(e);

@@ -15,7 +15,7 @@ private:
     std::string it;
 public:
     explicit Game(int k) {
-        std::string path = "C:\\Users\\Roman\\Documents\\untitled1\\TESTS\\myth_" + std::to_string(k) + ".json";
+        std::string path = "../TESTS/myth_" + std::to_string(k) + ".json";
         std::ifstream plots(path);
         plots >> j;
         // TODO close and exceptions

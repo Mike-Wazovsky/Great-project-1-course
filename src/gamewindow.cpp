@@ -1,19 +1,19 @@
-#include "gamewindow.h"
-#include "ui_gamewindow.h"
-#include "second_main.h"
-#include "game.h"
-#include "controller.h"
-#include "view.h"
-#include "uml.h"
+#include "include/gamewindow.h"
+#include "include/ui_gamewindow.h"
+#include "include/second_main.h"
+#include "include/game.h"
+#include "include/controller.h"
+#include "include/view.h"
+#include "include/uml.h"
 #include <cstdlib>
 #include <iostream>
 
-const int the_number_of_plots = 2;
-int number_plot = std::rand() % the_number_of_plots;
+extern const int the_number_of_plots;
+extern int number_plot;
 
-Game game(number_plot);
-View view;
-Controller controller;
+extern Game game;
+extern View view;
+extern Controller controller;
 
 GameWindow::GameWindow(QWidget *parent) :
     QDialog(parent),

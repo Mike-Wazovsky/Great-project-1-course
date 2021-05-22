@@ -1,8 +1,8 @@
-#include "second_main.h"
-#include "game.h"
-#include "controller.h"
-#include "view.h"
-#include "uml.h"
+#include "include/second_main.h"
+#include "include/game.h"
+#include "include/controller.h"
+#include "include/view.h"
+#include "include/uml.h"
 #include <cstdlib>
 
 int MainOfGame::get_the_number_plot(int k) {

@@ -1,16 +1,16 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "include/mainwindow.h"
+#include "include/ui_mainwindow.h"
 #include <QPixmap>
-#include "settingswindow.h"
-//#include "gamewindow.h"
-#include "windowwithgame.h"
+#include "include/settingswindow.h"
+//#include "include/gamewindow.h"
+#include "include/windowwithgame.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/images/images/settings_button.png");
+    QPixmap pix("../images/settings_button.png");
 }
 
 MainWindow::~MainWindow()

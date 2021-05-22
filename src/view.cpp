@@ -1,4 +1,4 @@
-#include "view.h"
+#include "include/view.h"
 #include <iostream>
 #include <string>
 
@@ -20,5 +20,5 @@ void View::Result_move(std::string result) {
 std::string View::end_game(std::string end) {
     //std::cout << end << std::endl;
     //std::cout << "Game over" << std::endl;
-    return "Game over";
+    return (end + "\nGame over");
 }

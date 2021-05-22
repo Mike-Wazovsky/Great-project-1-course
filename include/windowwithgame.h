@@ -21,7 +21,7 @@ private slots:
 
     void on_No_Button_clicked();
 
-    void windowwithgame::on_Button_clicked(bool choice);
+    void on_Button_clicked(bool choice);
 private:
     Ui::windowwithgame *ui;
 };

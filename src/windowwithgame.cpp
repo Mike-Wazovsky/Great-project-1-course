@@ -1,22 +1,22 @@
-#include "windowwithgame.h"
-#include "ui_windowwithgame.h"
-#include "resultwindow.h"
-#include "mainwindow.h"
-#include "second_main.h"
-#include "game.h"
-#include "controller.h"
-#include "view.h"
-#include "uml.h"
+#include "include/windowwithgame.h"
+#include "include/ui_windowwithgame.h"
+#include "include/resultwindow.h"
+#include "include/mainwindow.h"
+#include "include/second_main.h"
+#include "include/game.h"
+#include "include/controller.h"
+#include "include/view.h"
+#include "include/uml.h"
 #include <cstdlib>
 #include <iostream>
 #include <QMessageBox>
 
-extern const int the_number_of_plots = 2;
-extern int number_plot = std::rand() % the_number_of_plots;
+const int the_number_of_plots = 2;
+int number_plot = std::rand() % the_number_of_plots;
 
-extern Game game(number_plot);
+Game game(number_plot);
 View view;
-extern Controller controller;
+Controller controller;
 
 windowwithgame::windowwithgame(QWidget *parent) :
     QDialog(parent),
@@ -25,8 +25,8 @@ windowwithgame::windowwithgame(QWidget *parent) :
     ui->setupUi(this);
     game.to_uml(number_plot);
     std::string str = view.start_game(game.start_game());
-    QString qstr(str[0]);
-    ui->label->setText("Started" /*qst*/);
+    // QString qstr(str[0]);
+    ui->label->setText(QString::fromStdString(str));
 }
 
 windowwithgame::~windowwithgame()
@@ -46,14 +46,14 @@ void windowwithgame::on_Yes_Button_clicked()
         //result.exec();
         // TODO better to make a window with result
         std::string result_of_game = view.end_game(game.get_story());
-        QMessageBox::about(this, "result of story", "result_of_game");
-        MainWindow main;
+        QMessageBox::about(this, "result of story", QString::fromStdString(result_of_game));
+	MainWindow main;
         main.resize(800, 750);
         main.show();
     }
     else {
         std::string new_move = view.start_move(game.get_story());
-        ui->label->setText("result of yes");
+        ui->label->setText(QString::fromStdString(new_move));
     }
 }
 
@@ -70,14 +70,14 @@ void windowwithgame::on_No_Button_clicked()
         //result.exec();
         // TODO better to make a window with result
         std::string result_of_game = view.end_game(game.get_story());
-        QMessageBox::about(this, "result of story", "result_of_game");
+        QMessageBox::about(this, "result of story", QString::fromStdString(result_of_game));
         MainWindow main;
         main.resize(800, 750);
         main.show();
     }
     else {
         std::string new_move = view.start_move(game.get_story());
-        ui->label->setText("result of no");
+        ui->label->setText(QString::fromStdString(new_move));
     }
 }
 
