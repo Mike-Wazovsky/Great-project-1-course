@@ -316,7 +316,7 @@
     },
     "die_resource1_high": {
       "is_end": true,
-      "text": "как раз появится время насладиться своей неотразимостью."
+      "text": "die_resource1_high"
     },
     "die_resource1_low": {
       "is_end": true,
@@ -349,6 +349,198 @@
     "win": {
       "is_end": true,
       "text": "Икар погиб, но вы успешно долетели до Сицилии и прожили там долгую, счастливую и богатую жизнь."
+    },
+    "chance_to_change_resource1_high": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_high": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_high": {
+      "is_end": false,
+      "text": "Вы очень устали от всех этих переживаний. Может, пора восстановить силы?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_high": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource1_low": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": -1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_low": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_low": {
+      "is_end": false,
+      "text": "Вы бодры, полны сил и очень активны. Может, замереть на секунду, попробовать поймать дзен, успокоиться?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_low": {
+      "is_end": false,
+      "text": "",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
     }
   },
 

@@ -41,6 +41,11 @@ int MainOfGame::second_main() {
         bool choice = controller.move();
         game.change_resources(choice);
         game.move(choice);
+        if (!game.check_resources()) {
+            view.start_move(game.get_story());
+            bool choice = controller.move();
+            game.change_resources(choice);
+        }
         game.check_end();
     }
     view.end_game(game.get_story());

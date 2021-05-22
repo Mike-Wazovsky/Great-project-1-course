@@ -1601,6 +1601,198 @@
     "die_resource4_low": {
       "is_end": true,
       "text": "У вас совсем не осталось средств на существование. Вот почему у кого-то есть всё и с излишествами, а у кого-то совсем ничего. Вот даже взять это проклятую старуху-процентщицу. Почему мы, честные люди, должны работать всю свою жизнь, а она абсолютно незаслуженно владела такими богатсвами? Где-то ведь и у вас был топорик..."
+    },
+    "chance_to_change_resource1_high": {
+      "is_end": false,
+      "text": "У вас завидные отношения с коллегами, но вот закрадывается мысль немного им напакастить. Пойдете на поводу у ваших темных мыслей и желаний?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_high": {
+      "is_end": false,
+      "text": "Дела на удивление идут слишком хорошо. Можно выкроить время и немного расслабиться, помечтать о вечном. Как считаете?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_high": {
+      "is_end": false,
+      "text": "Мир вокруг плывет, и отнюдь не из-за жары, или какие там еще причины могут быть. Вы слишком устали. Может, пустить все на самотек? От часика отдаха никто не пострадает.",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_high": {
+      "is_end": false,
+      "text": "В последнее время вы разжились неплохими деньгами. Слышал, детям из бедной семьи Мармеладовых не помешала бы помощь. Что вы об этом думаете, о милый, щедрый, добрый и благодушный следователь? Поможете несчастным?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource1_low": {
+      "is_end": false,
+      "text": "Еще немного и ваши коллеги вас возненавидят. Может, стоит угостить их тыквенным пирогом, сливочным пивом?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": -1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_low": {
+      "is_end": false,
+      "text": "Очень тяжко нынче работать. Расследование продвигается как черепаха, безуспешно пытающаяся уползти от голодного Робинзоно Крузо. Вроде, стараешься, стараешься, а ничего не выходит. Не хотите попросить помощи у Большого Брата",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_low": {
+      "is_end": false,
+      "text": "Такое чувство, что каждая клеточка организма ощущает дикий прилив энергии. Вам бы пробежаться, попрыгать, помахать коленями в позе бабочка. Что вы об этом думаете?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_low": {
+      "is_end": false,
+      "text": "Эх, был бы кошелек холодильником, в нем бы неприменно повесилась мышь. Но что за удача! Вы заметили совершенно точно никому не принадлежащую банкноту. Возьмете себе?",
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
     }
   },
 
