@@ -11,8 +11,8 @@
 #include <iostream>
 #include <QMessageBox>
 
-const int the_number_of_plots = 2;
-int number_plot = std::rand() % the_number_of_plots;
+const int the_number_of_plots = 3;
+int number_plot = /*std::rand() % the_number_of_plots*/2;
 
 Game game(number_plot);
 View view;
@@ -23,7 +23,7 @@ windowwithgame::windowwithgame(QWidget *parent) :
     ui(new Ui::windowwithgame)
 {
     ui->setupUi(this);
-    game.to_uml(number_plot);
+  //  game.to_uml(number_plot);
     std::string str = view.start_game(game.start_game());
     // QString qstr(str[0]);
     ui->label->setText(QString::fromStdString(str));
@@ -36,7 +36,7 @@ windowwithgame::~windowwithgame()
 
 void windowwithgame::on_Yes_Button_clicked()
 {
-    game.change_resourses(true);
+    game.change_resources(true);
     game.move(true);
     game.check_end();
     if (game.is_game_ended()) {
@@ -60,7 +60,7 @@ void windowwithgame::on_Yes_Button_clicked()
 void windowwithgame::on_No_Button_clicked()
 {
     ui->label->setText("no" /*qst*/);
-    game.change_resourses(false);
+    game.change_resources(false);
     game.move(false);
     game.check_end();
     if (game.is_game_ended()) {

@@ -9,13 +9,19 @@
         "yes": {
           "next_event": "event2",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event3",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -27,13 +33,19 @@
         "yes": {
           "next_event": "event5",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event4",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -45,13 +57,19 @@
         "yes": {
           "next_event": "event5",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die2",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -63,13 +81,19 @@
         "yes": {
           "next_event": "event6",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die1",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -81,13 +105,19 @@
         "yes": {
           "next_event": "event7",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die2",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -99,13 +129,19 @@
         "yes": {
           "next_event": "event3",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die1",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -117,13 +153,19 @@
         "yes": {
           "next_event": "event8",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die3",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -135,13 +177,19 @@
         "yes": {
           "next_event": "event9",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event12",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -153,13 +201,19 @@
         "yes": {
           "next_event": "event10",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die4",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -171,13 +225,19 @@
         "yes": {
           "next_event": "die5",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event11",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -189,13 +249,19 @@
         "yes": {
           "next_event": "die6",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "win",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -207,13 +273,19 @@
         "yes": {
           "next_event": "event9",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die4",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -242,13 +314,37 @@
       "is_end": true,
       "text": "Ваши крылья забрызгало волнами, и они промокли! Вы с Икаром утонули."
     },
-    "die_determination_high": {
+    "die_resource1_high": {
       "is_end": true,
-      "text": "У Вас случился сердечнвй приступ."
+      "text": "как раз появится время насладиться своей неотразимостью."
     },
-    "die_determination_low": {
+    "die_resource1_low": {
       "is_end": true,
-      "text": "Вы задохнулись по неведомым причинам."
+      "text": "die_resource1_low"
+    },
+    "die_resource2_high": {
+      "is_end": true,
+      "text": "die_resource2_high"
+    },
+    "die_resource2_low": {
+      "is_end": true,
+      "text": "die_resource2_low"
+    },
+    "die_resource3_high": {
+      "is_end": true,
+      "text": "die_resource3_high"
+    },
+    "die_resource3_low": {
+      "is_end": true,
+      "text": "die_resource3_low"
+    },
+    "die_resource4_high": {
+      "is_end": true,
+      "text": "die_resource4_high"
+    },
+    "die_resource4_low": {
+      "is_end": true,
+      "text": "die_resource4_low"
     },
     "win": {
       "is_end": true,
@@ -257,10 +353,25 @@
   },
 
   "resources": {
-    "determination": {
+    "resource1": {
       "highest_value": 100,
       "start_value": 50,
-      "lowest_value": 10
+      "lowest_value": 0
+    },
+    "resource2": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource3": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource4": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
     }
   }
 }

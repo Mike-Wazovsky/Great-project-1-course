@@ -5,23 +5,50 @@ void Game::to_uml(int k) {
     translation_from_json_to_uml(j, path);
 }
 
-void Game::change_resourses(bool f) {
+void Game::change_resources(bool f) {
     if (it.empty() || j["events"][it]["is_end"]){
         return;
     }
     if (f) {
-        determination += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["determination"]);
+        resource1 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource1"]);
+        resource2 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource2"]);
+        resource3 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource3"]);
+        resource4 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource4"]);
     } else {
-        determination += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["determination"]);
+        resource1 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource1"]);
+        resource2 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource2"]);
+        resource3 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource3"]);
+        resource4 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource4"]);
     }
 }
 
 void Game::check_end() {
-    if (determination >= j["resources"]["determination"]["highest_value"]) {
-        it = "die_high";
+    if (resource1 >= j["resources"]["resource1"]["highest_value"]) {
+        it = "die_resource1_high";
     }
-    if (determination <= j["resources"]["determination"]["lowest_value"]) {
-        it = "die_low";
+    if (resource1 <= j["resources"]["resource1"]["lowest_value"]) {
+        it = "die_resource1_low";
+    }
+
+    if (resource2 >= j["resources"]["resource2"]["highest_value"]) {
+        it = "die_resource2_high";
+    }
+    if (resource2 <= j["resources"]["resource2"]["lowest_value"]) {
+        it = "die_resource2_low";
+    }
+
+    if (resource3 >= j["resources"]["resource3"]["highest_value"]) {
+        it = "die_resource3_high";
+    }
+    if (resource3 <= j["resources"]["resource3"]["lowest_value"]) {
+        it = "die_resource3_low";
+    }
+
+    if (resource4 >= j["resources"]["resource4"]["highest_value"]) {
+        it = "die_resource4_high";
+    }
+    if (resource4 <= j["resources"]["resource4"]["lowest_value"]) {
+        it = "die_resource4_low";
     }
 }
 
@@ -44,7 +71,10 @@ void Game::move(bool choice) {
 }
 
 std::string Game::start_game() {
-    determination = j["resources"]["determination"]["start_value"];
+    resource1 = j["resources"]["resource1"]["start_value"];
+    resource2 = j["resources"]["resource2"]["start_value"];
+    resource3 = j["resources"]["resource3"]["start_value"];
+    resource4 = j["resources"]["resource4"]["start_value"];
     it = "event1";
     return j["declaring_character"];
 }

@@ -9,19 +9,19 @@
         "yes": {
           "next_event": "event2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event3",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -33,19 +33,19 @@
         "yes": {
           "next_event": "event4",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event5",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -57,19 +57,19 @@
         "yes": {
           "next_event": "event2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die0",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -81,19 +81,19 @@
         "yes": {
           "next_event": "event6",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event7",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -105,19 +105,19 @@
         "yes": {
           "next_event": "event8",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event9",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -129,19 +129,19 @@
         "yes": {
           "next_event": "event8",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event9",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -153,19 +153,19 @@
         "yes": {
           "next_event": "event8",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event9",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -177,19 +177,19 @@
         "yes": {
           "next_event": "event10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         }
       }
@@ -201,19 +201,19 @@
         "yes": {
           "next_event": "event10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         }
       }
@@ -225,19 +225,19 @@
         "yes": {
           "next_event": "event11",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event12",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -249,19 +249,19 @@
         "yes": {
           "next_event": "event13",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die1",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -273,19 +273,19 @@
         "yes": {
           "next_event": "event13",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die1",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -297,19 +297,19 @@
         "yes": {
           "next_event": "event14",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event14",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         }
       }
@@ -329,19 +329,19 @@
         "yes": {
           "next_event": "event15",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event16",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -353,19 +353,19 @@
         "yes": {
           "next_event": "event17",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event16",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -377,19 +377,19 @@
         "yes": {
           "next_event": "event18",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 20,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 20,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event37",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -401,19 +401,19 @@
         "yes": {
           "next_event": "event19",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event39",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -425,19 +425,19 @@
         "yes": {
           "next_event": "event20",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 30,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 30,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event23",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -449,19 +449,19 @@
         "yes": {
           "next_event": "event21",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 20,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -477,19 +477,19 @@
         "yes": {
           "next_event": "event22",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event22",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -501,19 +501,19 @@
         "yes": {
           "next_event": "die3",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "die4",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -533,19 +533,19 @@
         "yes": {
           "next_event": "event21",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 20,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -569,19 +569,19 @@
         "yes": {
           "next_event": "event24",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event36",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -593,19 +593,19 @@
         "yes": {
           "next_event": "event25",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event27",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -617,19 +617,19 @@
         "yes": {
           "next_event": "event26",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event28",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -641,19 +641,19 @@
         "yes": {
           "next_event": "die5",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event29",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -669,19 +669,19 @@
         "yes": {
           "next_event": "event26",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event28",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -693,19 +693,19 @@
         "yes": {
           "next_event": "die5",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event29",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -717,19 +717,19 @@
         "yes": {
           "next_event": "event30",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -30
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -30
           }
         },
         "no": {
           "next_event": "event35",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -741,67 +741,67 @@
         "yes": {
           "next_event": "event31",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event34",
           "resource_change": {
-            "respect_for_colleagues": 10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
     },
     "event31": {
       "is_end": false,
-      "text": "Вы отдали три купленные для коллег шавермы. Нищие поблагодарили вас, их глаза стали живыми и ясными, улыбки окрасили их серые лица. Они тотчас принялись есть. Вдруг один из них резко нахмурился, его лицо стало серьёзным и он произнес: "Я был там, Порфирий Петрович. Я был там 3000 лет назад… …когда Родион Раскольников обрёл Топор. Я видел сам, как старуха-процентщица дала слабину. Тот парень, что стоял с вами у ларька... Он убийца!" Вы не на шутку перепугались и удивились. Откуда нищий знает как вас зовут? Что за бред он несёт? Расспросить его поподробнее?",
+      "text": "Вы отдали три купленные для коллег шавермы. Нищие поблагодарили вас, их глаза стали живыми и ясными, улыбки окрасили их серые лица. Они тотчас принялись есть. Вдруг один из них резко нахмурился, его лицо стало серьёзным и он произнес: \"Я был там, Порфирий Петрович. Я был там 3000 лет назад… …когда Родион Раскольников обрёл Топор. Я видел сам, как старуха-процентщица дала слабину. Тот парень, что стоял с вами у ларька... Он убийца!\" Вы не на шутку перепугались и удивились. Откуда нищий знает как вас зовут? Что за бред он несёт? Расспросить его поподробнее?",
       "routes": {
         "yes": {
           "next_event": "event32",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event33",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
     },
     "event32": {
       "is_end": false,
-      "text": "Только вы собирались задать нищему вопрос, как он вскочил держа в руку ещё недоеденную шаверму и с криками "Моя прелесть!" убежал в закат. Другие два его сотрапезника ничего не смогли вам сообщить и не понимали о чём идёт речь. Странно это всё, но пора возвращаться назад. Вернувшись в офис вы собрали своих коллег и к вам в кабинет привели тех самых маляров. Начать разговор?",
+      "text": "Только вы собирались задать нищему вопрос, как он вскочил держа в руку ещё недоеденную шаверму и с криками \"Моя прелесть!\" убежал в закат. Другие два его сотрапезника ничего не смогли вам сообщить и не понимали о чём идёт речь. Странно это всё, но пора возвращаться назад. Вернувшись в офис вы собрали своих коллег и к вам в кабинет привели тех самых маляров. Начать разговор?",
       "routes": {
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
-        "no41": {
-          "next_event": "event",
+        "no": {
+          "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -813,19 +813,19 @@
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -837,19 +837,19 @@
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -861,19 +861,19 @@
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -885,19 +885,19 @@
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -909,19 +909,19 @@
         "yes": {
           "next_event": "event38",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event38",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         }
       }
@@ -933,19 +933,19 @@
         "yes": {
           "next_event": "event42",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event41",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -957,19 +957,19 @@
         "yes": {
           "next_event": "event40",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 20,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -981,19 +981,19 @@
         "yes": {
           "next_event": "event38",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": -10
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
           }
         },
         "no": {
           "next_event": "event38",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
           }
         }
       }
@@ -1005,19 +1005,19 @@
         "yes": {
           "next_event": "event43",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event44",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1029,19 +1029,19 @@
         "yes": {
           "next_event": "event43",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event44",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1053,19 +1053,19 @@
         "yes": {
           "next_event": "event45",
           "resource_change": {
-            "respect_for_colleagues": -10,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": -10,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event46",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1075,21 +1075,21 @@
       "text": "Вы решили не акцентировать внимание на этом и продолжили разговор. К сожалению ничего полезного вы не узнали, а скорее наоборот больше запутались. Рабочий день подходит к концу. Самое время отправиться домой. Вперёд?",
       "routes": {
         "yes": {
-          "next_event": "event",
+          "next_event": "event48",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event47",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1101,19 +1101,19 @@
         "yes": {
           "next_event": "die6",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event46",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1127,21 +1127,21 @@
       "text": "Вы читаете людей как открытую книгу и понимаете что этот паренёк не может быть убийцей. Вы довольны, что он сознался в содеянной краже и раскаивается, но к сожалению ничего нового из разговора со свидетелями вы не узнали, а скорее наоборот больше запутались. Рабочий день подходит к концу. Самое время отправиться домой. Вперёд?",
       "routes": {
         "yes": {
-          "next_event": "event",
+          "next_event": "event48",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event47",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1153,19 +1153,19 @@
         "yes": {
           "next_event": "event49",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 10,
-            "money": 10
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
           }
         },
         "no": {
           "next_event": "event50",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1177,19 +1177,19 @@
         "yes": {
           "next_event": "event49",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 10,
-            "money": 10
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
           }
         },
         "no": {
           "next_event": "event51",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1201,19 +1201,19 @@
         "yes": {
           "next_event": "event50",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event52",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": -10,
-            "fatigue": 10,
-            "money": 10
+            "resource1": 0,
+	    "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
           }
         }
       }
@@ -1225,19 +1225,19 @@
         "yes": {
           "next_event": "event53",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event54",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1249,19 +1249,19 @@
         "yes": {
           "next_event": "event53",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event54",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1273,19 +1273,19 @@
         "yes": {
           "next_event": "event53",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event54",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1297,19 +1297,19 @@
         "yes": {
           "next_event": "event55",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die7",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1321,19 +1321,19 @@
         "yes": {
           "next_event": "event60",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die9",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1349,19 +1349,19 @@
         "yes": {
           "next_event": "die8",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event56",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": -10,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
           }
         }
       }
@@ -1377,19 +1377,19 @@
         "yes": {
           "next_event": "event57",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
-          "next_event": "event",
+          "next_event": "event59",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1401,19 +1401,19 @@
         "yes": {
           "next_event": "win1",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event58",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1425,19 +1425,19 @@
         "yes": {
           "next_event": "win2",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "win3",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1449,19 +1449,19 @@
         "yes": {
           "next_event": "win1",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event58",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1477,19 +1477,19 @@
         "yes": {
           "next_event": "event61",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event62",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1501,19 +1501,19 @@
         "yes": {
           "next_event": "die10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event63",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1525,19 +1525,19 @@
         "yes": {
           "next_event": "die10",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event63",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -1553,74 +1553,74 @@
         "yes": {
           "next_event": "win1",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "event58",
           "resource_change": {
-            "respect_for_colleagues": 0,
-	    "progress_in_the_investigation": 0,
-            "fatigue": 0,
-            "money": 0
+            "resource1": 0,
+	    "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
     },
-    "die_respect_for_colleagues_high": {
+    "die_resource1_high": {
       "is_end": true,
       "text": "У вас чудесные отношения с коллегами! Начальство считает вас лучшим работником и вообще сладкой булочкой. Вы достойны большего, чем разбираться в убийстве какой-то никчемной старухи. Этим делом займется кто-то другой, а у вас как раз появится время насладиться своей неотразимостью."
     },
-    "die_respect_for_colleagues_low": {
+    "die_resource1_low": {
       "is_end": true,
       "text": "Вы совсем не уважаете своих коллег! Пропускаете общие посиделки, не ходите со всеми на двухминутку ненависти. Еще немножко, и престаненете верить, что важды два — пять. Вас вынудили перейти в другой отдел. Дела делами, но о людях забывать не стоит!"
     },
-    "die_progress_in_the_investigation_high": {
+    "die_resource2_high": {
       "is_end": true,
       "text": "Вам показалось, что вы знаете о деле всё необходимое, все доказатества у вас на руках, пазл, наконец, сошелся. Увы, но вашему начальству так не показалось. Очевидно, вы незаслуженно занимаете свою должность. Этим преинтереснейшим делом займется кто-то более достойный. Но вы, Порфирий Петрович, главное не унывайте, не унывайте."
     },
-    "die_progress_in_the_investigation_low": {
+    "die_resource2_low": {
       "is_end": true,
       "text": "Ваше расследование продвигается слишком медленно. Некий господин из Англии в интересной шляпе уже сумел разобраться во всех обстоятельствах убийства. Ваше начальство считет, что вы незаслуженно занимаете свою должность. Порфирий Петрович, главное не унывайте, не унывайте."
     },
-    "die_fatigue_high": {
+    "die_resource3_high": {
       "is_end": true,
       "text": "Вы так устали, что буквально валитесь с ног. Решено. Не выходи из комнаты, не совершай ошибку. Ведь здесь есть мягкая, теплая, манящая кровать. Вы пришли к выводу, что проспать всю свою жизнь не такая уж и плохая идея. Ну что ж, спокойной ночи."
     },
-    "die_fatigue_low": {
+    "die_resource3_low": {
       "is_end": true,
       "text": "Вы бодры, веселы. Бодры нужно говорить бодрее, но бодрее уже некуда. Энергия расприрает вас изнутри. Распирает, распирает. Упс, кажется, расперла. Чего только не бывает в нашем мире. А вы чего здесь делаете? История-то уже кончилась!"
     },
-    "die_money_high": {
+    "die_resource4_high": {
       "is_end": true,
       "text": "Монеточки буквально валятся у вас из карманов! Как бы кто не позарился на них. Следует быть осторожным, а то видали, чего в газетах пишут? На днях одного такого ограбили в темном переулке. Ни денег, ни шинели, ни жизни. Погодите-ка... Порфирий Петрович, так это же о вас!"
     },
-    "die_money_low": {
+    "die_resource4_low": {
       "is_end": true,
       "text": "У вас совсем не осталось средств на существование. Вот почему у кого-то есть всё и с излишествами, а у кого-то совсем ничего. Вот даже взять это проклятую старуху-процентщицу. Почему мы, честные люди, должны работать всю свою жизнь, а она абсолютно незаслуженно владела такими богатсвами? Где-то ведь и у вас был топорик..."
-    },
+    }
   },
 
   "resources": {
-    "respect_for_colleagues": {
+    "resource1": {
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
-    "progress_in_the_investigation": {
+    "resource2": {
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
-    "fatigue": {
+    "resource3": {
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
-    "money": {
+    "resource4": {
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0

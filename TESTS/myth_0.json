@@ -9,13 +9,19 @@
         "yes": {
           "next_event": "win",
           "resource_change": {
-            "determination": 10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         },
         "no": {
           "next_event": "die",
           "resource_change": {
-            "determination": -10
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
           }
         }
       }
@@ -24,13 +30,37 @@
       "is_end": true,
       "text": "Направляясь утром к рабочему столу, вы запнулись о провод. Это была нелепая смерть."
     },
-    "die_determination_high": {
+    "die_resource1_high": {
       "is_end": true,
-      "text": "Вы погибли от рук уличного грабителя."
+      "text": "как раз появится время насладиться своей неотразимостью."
     },
-    "die_determination_low": {
+    "die_resource1_low": {
       "is_end": true,
-      "text": "Вы погибли в перестрелке."
+      "text": "die_resource1_low"
+    },
+    "die_resource2_high": {
+      "is_end": true,
+      "text": "die_resource2_high"
+    },
+    "die_resource2_low": {
+      "is_end": true,
+      "text": "die_resource2_low"
+    },
+    "die_resource3_high": {
+      "is_end": true,
+      "text": "die_resource3_high"
+    },
+    "die_resource3_low": {
+      "is_end": true,
+      "text": "die_resource3_low"
+    },
+    "die_resource4_high": {
+      "is_end": true,
+      "text": "die_resource4_high"
+    },
+    "die_resource4_low": {
+      "is_end": true,
+      "text": "die_resource4_low"
     },
     "win": {
       "is_end": true,
@@ -39,7 +69,22 @@
   },
 
   "resources": {
-    "determination": {
+    "resource1": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource2": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource3": {
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource4": {
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
