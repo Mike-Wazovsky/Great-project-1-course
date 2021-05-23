@@ -19,10 +19,10 @@
       "text": "Далёком-далёком прошлом?",
       "routes": {
         "yes": {
-          "next_event": "myth_2"
+          "next_event": "myth_1"
         },
         "no": {
-          "next_event": "myth_3"
+          "next_event": "myth_2"
         }
       }
     },
