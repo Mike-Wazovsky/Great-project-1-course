@@ -124,6 +124,9 @@ void Game::check_end() {
 }
 
 bool Game::is_game_ended() const {
+    if (it.empty()) {
+        it = "event1";
+    }
     return j["events"][it]["is_end"];
 }
 
