@@ -123,7 +123,7 @@ void Game::check_end() {
     }
 }
 
-bool Game::is_game_ended() const {
+bool Game::is_game_ended() {
     if (it.empty()) {
         it = "event1";
     }
