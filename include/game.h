@@ -36,7 +36,7 @@ public:
 
     void to_uml(int k);
 
-    bool is_game_ended() const;
+    bool is_game_ended();
     void move(bool);
     std::string start_game();
     std::string get_story();
