@@ -1,0 +1,42 @@
+{
+  "plot_title": "plot_selection",
+  "declaring_character": "",
+  "events": {
+    "event1": {
+      "is_end": false,
+      "text": "Вы бы хотели жить в прошлом?",
+      "routes": {
+        "yes": {
+          "next_event": "event2"
+        },
+        "no": {
+          "next_event": "myth_0"
+        }
+      }
+    },
+    "event2": {
+      "is_end": false,
+      "text": "Далёком-далёком прошлом?",
+      "routes": {
+        "yes": {
+          "next_event": "myth_1"
+        },
+        "no": {
+          "next_event": "myth_2"
+        }
+      }
+    },
+    "myth_0": {
+      "is_end": true,
+      "text": "0"
+    },
+    "myth_1": {
+      "is_end": true,
+      "text": "1"
+    },
+    "myth_2": {
+      "is_end": true,
+      "text": "2"
+    }
+  }
+}
