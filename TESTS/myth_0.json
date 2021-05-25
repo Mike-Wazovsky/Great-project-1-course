@@ -5,6 +5,7 @@
     "event1": {
       "is_end": false,
       "text": "Виталя просит вас вместо учебы сходить с ним на футбол, играть против экономистов. Вы выполните просьбу Витали?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "win",
@@ -69,6 +70,7 @@
     "chance_to_change_resource1_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_high",
@@ -93,6 +95,7 @@
     "chance_to_change_resource2_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_high",
@@ -117,6 +120,7 @@
     "chance_to_change_resource3_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_high",
@@ -141,6 +145,7 @@
     "chance_to_change_resource4_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_high",
@@ -165,6 +170,7 @@
     "chance_to_change_resource1_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_low",
@@ -189,6 +195,7 @@
     "chance_to_change_resource2_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_low",
@@ -213,6 +220,7 @@
     "chance_to_change_resource3_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_low",
@@ -237,6 +245,7 @@
     "chance_to_change_resource4_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_low",

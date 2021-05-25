@@ -5,6 +5,7 @@
     "event1": {
       "is_end": false,
       "text": "Ваша сестра Пердика просит взять сына своего, Тала в подмастерья. Исполните ее просьбу?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event2",
@@ -29,6 +30,7 @@
     "event2": {
       "is_end": false,
       "text": "Ваш племянник стал учеником другого мастера, и делает большие успехи! Стоит беспокоиться, что Тал может превзойти вас?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -53,6 +55,7 @@
     "event3": {
       "is_end": false,
       "text": "Ваш племянник делает большие успехи! Поговаривают, что Тал может вас превзойти. Вас беспокоит это?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -77,6 +80,7 @@
     "event4": {
       "is_end": false,
       "text": "Наставник вашего племянника завидывал его успехам, и решил убить Тала. Ваша сестра Пердика не смогла смириться с потерей сына и обвиняет вас в отказе взять его себе в подмастрерье. Возьмете на себя ответственность и извинитесь?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event6",
@@ -101,6 +105,7 @@
     "event5": {
       "is_end": false,
       "text": "У вас возникла мысль об убийстве возможного соперника, вашего племянника. Сделаете это?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event7",
@@ -125,6 +130,7 @@
     "event6": {
       "is_end": false,
       "text": "Пердика простила вас. Она просит взять в ученики второго своего сына. Исполните ее просьбу?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event3",
@@ -149,6 +155,7 @@
     "event7": {
       "is_end": false,
       "text": "Вас застали в момент совершения преступления! Вы ждете смертельного приговора. Может, сбежать?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event8",
@@ -173,6 +180,7 @@
     "event8": {
       "is_end": false,
       "text": "Вы успешно сбежали на остров Крит и прожили там долгое время. У вас родился сын Икар. Но жизнь на остове уже наскучила. Может, опять сбежать?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event9",
@@ -197,6 +205,7 @@
     "event9": {
       "is_end": false,
       "text": "Вы смастерили крылья из перьев и воска. Это отличное изобретение! Икар летит?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event10",
@@ -221,6 +230,7 @@
     "event10": {
       "is_end": false,
       "text": "Если лететь близко к солнцу, воск расстаит, если близко к воде, промокнут перья. Будете следить за сыном?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die5",
@@ -245,6 +255,7 @@
     "event11": {
       "is_end": false,
       "text": "Ваш сын поднялся слишком высоко, и воск на крыльях расплавился. Икар упал в воду. Броситесь спасать его?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die6",
@@ -269,6 +280,7 @@
     "event12": {
       "is_end": false,
       "text": "Икар узнал о ваших мыслях о побеге, и его захватила эта идея. Он хочет улететь, даже если вы останетесь. Поможете ему?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event9",
@@ -353,6 +365,7 @@
     "chance_to_change_resource1_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_high",
@@ -377,6 +390,7 @@
     "chance_to_change_resource2_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_high",
@@ -401,6 +415,7 @@
     "chance_to_change_resource3_high": {
       "is_end": false,
       "text": "Вы очень устали от всех этих переживаний. Может, пора восстановить силы?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_high",
@@ -425,6 +440,7 @@
     "chance_to_change_resource4_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_high",
@@ -449,6 +465,7 @@
     "chance_to_change_resource1_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_low",
@@ -473,6 +490,7 @@
     "chance_to_change_resource2_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_low",
@@ -497,6 +515,7 @@
     "chance_to_change_resource3_low": {
       "is_end": false,
       "text": "Вы бодры, полны сил и очень активны. Может, замереть на секунду, попробовать поймать дзен, успокоиться?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_low",
@@ -521,6 +540,7 @@
     "chance_to_change_resource4_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_low",

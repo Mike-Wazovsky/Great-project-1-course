@@ -5,6 +5,7 @@
     "event1": {
       "is_end": false,
       "text": "Вы бы хотели жить в прошлом?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event2"
@@ -17,6 +18,7 @@
     "event2": {
       "is_end": false,
       "text": "Далёком-далёком прошлом?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "myth_1"
