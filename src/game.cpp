@@ -9,6 +9,16 @@ void Game::change_resources(bool f) {
     if (it.empty() || j["events"][it]["is_end"]){
         return;
     }
+    /*std::string b;
+    if (f) {
+        b = "yes";
+    }
+    else {
+        b = "no";
+    }
+    for (auto i = 0; i < resource[0]) {
+        resource[i] += static_cast<int>(j["events"][it]["routes"][b]["resource_change"]["resource" + std::to_string(i + 1)]);
+    }*/
     if (f) {
         resource1 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource1"]);
         resource2 += static_cast<int>(j["events"][it]["routes"]["yes"]["resource_change"]["resource2"]);
@@ -20,6 +30,12 @@ void Game::change_resources(bool f) {
         resource3 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource3"]);
         resource4 += static_cast<int>(j["events"][it]["routes"]["no"]["resource_change"]["resource4"]);
     }
+    /*for (auto i = 1; i <= resource[0]) {
+        if (resource[i] > resource_high || resource[i] < resource_low) {
+            resource1 = j["resources"]["resource + std::to_string(i + 1)"]["start_value"];
+        }
+    }*/
+
     if (resource1 > resource_high || resource1 < resource_low) {
         resource1 = j["resources"]["resource1"]["start_value"];
     }
@@ -155,4 +171,17 @@ std::string Game::start_game() {
 
 std::string Game::get_story() {
     return j["events"][it]["text"];
+}
+
+int Game::mini_game() {
+    return j["events"][it]["mini_game"];
+}
+
+void Game::loss_in_mini_game(int k) {
+    if (k == arithmetic_problem) {
+        it = "die_arithmetic_problem";
+    }
+    else if (k == saper) {
+        it = "die_saper";
+    }
 }

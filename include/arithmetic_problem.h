@@ -30,7 +30,7 @@ namespace mini_games {
             // TODO close and exceptions
         }
 
-        std::string start_game ();
+        bool start_game ();
 
         bool check_answer(int ans);
     };
