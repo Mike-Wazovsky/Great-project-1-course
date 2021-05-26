@@ -8,17 +8,16 @@
 #include "uml.h"
 #include "json.hpp"
 
+#include <iostream>
+
 using json = nlohmann::json;
 
 struct Game {
 private:
-    const int resource_high = INT_MAX / 2;
-    const int resource_low = INT_MIN / 2;
-  //  std::vector<int> resource(5, 0);
-    int resource1 = 0;
-    int resource2 = 0;
-    int resource3 = 0;
-    int resource4 = 0;
+    const int resource_high = 900;
+    const int resource_low = -900;
+    const int amount_of_resources = 4;
+    std::vector<int> resource;
     json j;
     std::string it;
     std::string copy_it;
@@ -35,9 +34,23 @@ public:
         else {
             path = "../TESTS/myth_" + std::to_string(k) + ".json";
         }
+        std::cout << "h1 " << path << '\n';
         std::ifstream plots(path);
         plots >> j;
         // TODO close and exceptions
+        plots.close();
+        resource.resize(amount_of_resources);
+    }
+
+    explicit Game() {
+        std::string path;
+        path = "../TESTS/myth_0.json";
+        std::cout << "h2 " << path << '\n';
+        std::ifstream plots(path);
+        plots >> j;
+        plots.close();
+        // TODO close and exceptions
+        resource.resize(amount_of_resources);
     }
 
     void to_uml(int k);
@@ -52,5 +65,9 @@ public:
     void change_resources(bool f);
 
     int mini_game();
+
+
+
+    void change_plot(int k);
 };
 

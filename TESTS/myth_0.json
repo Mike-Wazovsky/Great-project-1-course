@@ -266,6 +266,14 @@
           }
         }
       }
+    },
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
     }
   },
 

@@ -30,7 +30,7 @@
     "event2": {
       "is_end": false,
       "text": "Ваш племянник стал учеником другого мастера, и делает большие успехи! Стоит беспокоиться, что Тал может превзойти вас?",
-      "mini_game" : 0,
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -55,7 +55,7 @@
     "event3": {
       "is_end": false,
       "text": "Ваш племянник делает большие успехи! Поговаривают, что Тал может вас превзойти. Вас беспокоит это?",
-      "mini_game" : 0,
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -561,6 +561,14 @@
           }
         }
       }
+    },
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
     }
   },
 

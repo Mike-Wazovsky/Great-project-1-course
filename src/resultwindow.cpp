@@ -1,6 +1,6 @@
 #include "include/resultwindow.h"
 #include "include/windowwithgame.h"
-#include "include/ui_resultwindow.h"
+#include "ui_resultwindow.h"
 
 resultwindow::resultwindow(QWidget *parent) :
     QDialog(parent),

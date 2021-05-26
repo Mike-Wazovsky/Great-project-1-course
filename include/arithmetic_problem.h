@@ -6,7 +6,7 @@
 
 using json = nlohmann::json;
 
-namespace mini_games {
+
     struct GameArithmeticProblem {
     private:
         json j;
@@ -30,8 +30,7 @@ namespace mini_games {
             // TODO close and exceptions
         }
 
-        bool start_game ();
+        void start_game ();
 
-        bool check_answer(int ans);
+        void check_answer(int ans);
     };
-}

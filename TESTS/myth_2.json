@@ -2,6 +2,14 @@
   "plot_title": "myth2",
   "declaring_character": "Вы знаменитый следователь Ленинградского округа города Санкт-Петербурга, старик 35 лет, Порфирий Петрович, опытный знаток своего дела.",
   "events": {
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
+    },
     "event1": {
       "is_end": false,
       "text": "Вам было поручено разобраться в одном громком деле – убийство старухи-процентщицы. Возьмётесь ли вы за него?",
