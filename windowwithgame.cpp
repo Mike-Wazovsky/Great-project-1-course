@@ -3,6 +3,7 @@
 #include "resultwindow.h"
 #include "mainwindow.h"
 #include "second_main.h"
+#include "arithmetic_problem.h"
 #include "game.h"
 #include "controller.h"
 #include "view.h"
@@ -10,6 +11,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <QMessageBox>
+#include "minigame.h"
 
 namespace p{
 int get_the_number_plot(int k) {
@@ -50,6 +52,7 @@ void windowwithgame::on_Yes_Button_clicked()
     if (p::selection) {
         p::selection = false;
         p::prepare_for_game = true;
+        part_of_selection(true);
         //p::view.start_move(p::select_plot.get_story());
         //std::string new_question = p::view.start_move(p::select_plot.get_story());
         //ui->label->setText(QString::fromStdString(new_question));
@@ -107,12 +110,29 @@ void windowwithgame::on_Button_clicked(bool choice) {
             main.show();
         }
         else {
-            std::string new_move = p::view.start_move(p::game.get_story());
-            ui->label->setText(QString::fromStdString(new_move));
+            //p::game.mini_game();
+            if (/*p::game.mini_game() == p::game.arithmetic_problem*/ true) {
+                mini_games::GameArithmeticProblem mini_game(1);
+                if(!mini_game.start_game()) {
+                    p::game.loss_in_mini_game(p::game.arithmetic_problem);
+                }
+            }
+            else if (/*p::game.mini_game() == p::game.saper*/ true) {
+                Minigame wind;
+                wind.setModal(true);
+                wind.exec();
+            }
+            if (p::game.is_game_ended()) {
+                //break;
+            }
+
             if (!p::game.check_resources()) {
                 std::string check = p::view.start_move(p::game.get_story());
                 ui->label->setText(QString::fromStdString(check));
                 p::resource_check = true;
+            } else {
+            std::string new_move = p::view.start_move(p::game.get_story());
+            ui->label->setText(QString::fromStdString(new_move));
             }
         }
     }

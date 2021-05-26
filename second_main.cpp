@@ -2,6 +2,8 @@
 #include "game.h"
 #include "controller.h"
 #include "view.h"
+///////////////////////////////////// new!
+#include "arithmetic_problem.h"
 #include <cstdlib>
 #include <iostream>
 
@@ -41,6 +43,24 @@ int MainOfGame::second_main() {
         bool choice = controller.move();
         game.change_resources(choice);
         game.move(choice);
+
+        //////////////////////////////////////////////////////////////new ->
+        if (game.mini_game() == game.arithmetic_problem) {
+            mini_games::GameArithmeticProblem mini_game(1);
+            if(!mini_game.start_game()) {
+                game.loss_in_mini_game(game.arithmetic_problem);
+            }
+        } else if (game.mini_game() == game.saper) {
+           /* Saper mini_game; // ?
+            if(!mini_game.start_game()) {
+                game.loss_in_mini_game(game.saper);
+            }*/
+        }
+        if (game.is_game_ended()) {
+            break;
+        }
+        //////////////////////////////////////////////////////////////new <-
+
         if (!game.check_resources()) {
             view.start_move(game.get_story());
             bool choice = controller.move();

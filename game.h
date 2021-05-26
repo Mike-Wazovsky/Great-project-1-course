@@ -3,6 +3,7 @@
 #include <utility>
 #include <string>
 #include <fstream>
+#include <vector>
 #include <climits>
 #include "uml.h"
 #include "json.hpp"
@@ -13,6 +14,7 @@ struct Game {
 private:
     const int resource_high = INT_MAX / 2;
     const int resource_low = INT_MIN / 2;
+  //  std::vector<int> resource(5, 0);
     int resource1 = 0;
     int resource2 = 0;
     int resource3 = 0;
@@ -21,10 +23,13 @@ private:
     std::string it;
     std::string copy_it;
 public:
-    Game(int k) {
+    const int arithmetic_problem = 1;
+    const int saper = 2;
+    void loss_in_mini_game(int k);
+
+    explicit Game(int k) {
         std::string path;
         if (k == -1) {
-
             path = "C:\\Users\\Roman\\Documents\\Macaft\\TESTS\\polt_selection.json";
         }
         else {
@@ -37,6 +42,7 @@ public:
 
     void to_uml(int k);
 
+
     bool is_game_ended();
     void move(bool);
     std::string start_game();
@@ -45,5 +51,6 @@ public:
     bool check_resources();
     void change_resources(bool f);
     void change_plot(int k);
-};
 
+    int mini_game();
+};

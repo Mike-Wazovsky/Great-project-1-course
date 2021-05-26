@@ -16,13 +16,13 @@ namespace mini_games {
             k = k % 3;
             std::string path;
             if (k == 0) {
-                path = "../PROBLEM_FOR_MINI_GAMES/task_easy.json";
+                path = "C:\\Users\\Roman\\Documents\\Macaft\\PROBLEM_FOR_MINI_GAMES\\task_easy.json";
             }
             else if (k == 1) {
-                path = "../PROBLEM_FOR_MINI_GAMES/task_normal.json";
+                path = "C:\\Users\\Roman\\Documents\\Macaft\\PROBLEM_FOR_MINI_GAMES\\task_normal.json";
             }
             else {
-                path = "../PROBLEM_FOR_MINI_GAMES/task_hard.json";
+                path = "C:\\Users\\Roman\\Documents\\Macaft\\PROBLEM_FOR_MINI_GAMES\\task_hard.json";
             }
 
             std::ifstream problems(path);
@@ -30,7 +30,7 @@ namespace mini_games {
             // TODO close and exceptions
         }
 
-        std::string start_game ();
+        bool start_game ();
 
         bool check_answer(int ans);
     };
