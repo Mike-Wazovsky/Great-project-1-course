@@ -80,7 +80,10 @@ void Minigame::calculate_grid() {
     }
 }
 
+extern bool result_mini_game;
+
 void Minigame::waiting_end() {
+    result_mini_game = false;
     ui->label->setText("Проигрышш"); //TODO delete this
 }
 
