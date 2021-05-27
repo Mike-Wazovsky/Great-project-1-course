@@ -92,13 +92,25 @@ void windowwithgame::on_Button_clicked(bool choice) {
         p::game.change_resources(choice);
         p::resource_check = false;
         p::game.check_end();
+        if (p::game.is_game_ended()) {
+            this->close();
+            //resultwindow result;
+            //result.setModal(true);
+            //result.exec();
+            // TODO better to make a window with result
+            std::string result_of_game = p::view.end_game(p::game.get_story());
+            QMessageBox::about(this, "result of story", QString::fromStdString(result_of_game));
+            MainWindow main;
+            main.resize(800, 750);
+            main.show();
+        }
         std::string new_move = p::view.start_move(p::game.get_story());
         ui->label->setText(QString::fromStdString(new_move));
     }
     else {
-        p::game.change_resources(choice); //!!!!!!!!!!!!!!!!!!!!!
+        p::game.change_resources(choice);
         p::game.move(choice);
-        p::game.check_end();
+      //  p::game.check_end();
         if (p::game.is_game_ended()) {
             this->close();
             //resultwindow result;
