@@ -8,23 +8,23 @@
 #include <cstdlib>
 #include <iostream>
 
-const int the_number_of_plots = 2;
-int number_plot = std::rand() % the_number_of_plots;
+//extern const int the_number_of_plots;
+//extern int number_plot;
 
-Game game(number_plot);
-View view;
-Controller controller;
+//extern Game game;
+//extern View view;
+//extern Controller controller;
 
 GameWindow::GameWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::GameWindow)
 {
     ui->setupUi(this);
-    game.to_uml(number_plot);
-    std::string str = view.start_game(game.start_game());
-    std::cout << str;
+    //game.to_uml(number_plot);
+    //std::string str = view.start_game(game.start_game());
+    //std::cout << str;
     //QString("Welcome %1").arg(str);
-    QString qstr(str[0]);
+    //QString qstr(str[0]);
     ui->label->setText("Started" /*qst*/);
 }
 

@@ -1,10 +1,11 @@
 {
   "plot_title": "myth0",
-  "declaring_character": "Вы всесильный Бог Дедлайнововремязакрыватель, у вас есть преданный друг Виталя.",
+  "declaring_character": "Вы всесильный Бог Дедлайнововремязакрыватель, у вас есть преданный друг Виталя",
   "events": {
     "event1": {
       "is_end": false,
       "text": "Виталя просит вас вместо учебы сходить с ним на футбол, играть против экономистов. Вы выполните просьбу Витали?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "win",
@@ -28,7 +29,7 @@
     },
     "die": {
       "is_end": true,
-      "text": "Направляясь утром к рабочему столу, вы запнулись о провод. Это была нелепая смерть."
+      "text": "Направляясь утром к рабочему столу, вы запнулись о провод. Это была нелепая смерть"
     },
     "die_resource1_high": {
       "is_end": true,
@@ -64,11 +65,12 @@
     },
     "win": {
       "is_end": true,
-      "text": "Эта была великолепная игра! После нее вы успели закрыть все дедлайны, вы ведь все - таки Бог. Но даже и Богам необходимо иногда отдыхать."
+      "text": "Эта была великолепная игра! После нее вы успели закрыть все дедлайны, вы ведь все - таки Бог. Но даже и Богам необходимо иногда отдыхать"
     },
     "chance_to_change_resource1_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_high",
@@ -93,6 +95,7 @@
     "chance_to_change_resource2_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_high",
@@ -117,6 +120,7 @@
     "chance_to_change_resource3_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_high",
@@ -141,6 +145,7 @@
     "chance_to_change_resource4_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_high",
@@ -165,6 +170,7 @@
     "chance_to_change_resource1_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_low",
@@ -189,6 +195,7 @@
     "chance_to_change_resource2_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_low",
@@ -213,6 +220,7 @@
     "chance_to_change_resource3_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_low",
@@ -237,6 +245,7 @@
     "chance_to_change_resource4_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_low",
@@ -257,26 +266,38 @@
           }
         }
       }
+    },
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "die_arithmetic_problem"
     }
   },
 
   "resources": {
     "resource1": {
+      "name" : "Ничего",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource2": {
+      "name" : "Ничегошеньки",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource3": {
+      "name" : "Совсем ничего",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource4": {
+      "name" : "Даже не надейся",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0

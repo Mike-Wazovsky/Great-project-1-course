@@ -1,18 +1,12 @@
-#include <QGridLayout>
-#include <math.h>
-#include <mutex>
-#include "minigame.h"
-#include "ui_mainwindow.h"
-#include "Button.h"
+#include "sapper.h"
+#include "ui_sapper.h"
 
-/*extern std::condition_variable cond;
-
+extern bool result_mini_game;
 Button *Cell[100][100];
 
-
-Minigame::Minigame(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::Minigame)
+sapper::sapper(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::sapper)
 {
     ui->setupUi(this);
     //QGridLayout self();
@@ -24,13 +18,12 @@ Minigame::Minigame(QWidget *parent)
     ui->lcdNumber->display(mines);
 }
 
-Minigame::~Minigame()
+sapper::~sapper()
 {
     delete ui;
 }
 
-
-Button *Minigame::createButton(int k, int i, int j)
+Button *sapper::createButton(int k, int i, int j)
 {
     Button *button = new Button(k, i, j, this);
     //button->oncellClicked(1, 1);
@@ -38,7 +31,7 @@ Button *Minigame::createButton(int k, int i, int j)
     return button;
 }
 
-void Minigame::create_cells() {
+void sapper::create_cells() {
     for (int i = 0; i <x; i++) {
         for (int j = 0; j < y; j++) {
             Cell[i][j] = createButton(0, i, j);
@@ -47,12 +40,12 @@ void Minigame::create_cells() {
     }
 }
 
-void Minigame::settings_of_grid() {
+void sapper::settings_of_grid() {
     ui->gridLayout_2->setSpacing(5);
     ui->gridLayout_2->setSizeConstraint(QLayout::SetFixedSize);
 }
 
-void Minigame::add_mines(int num_of_m) {
+void sapper::add_mines(int num_of_m) {
     while (num_of_m > 0) {
         int i = rand() % x;
         int j = rand() % y;
@@ -64,7 +57,7 @@ void Minigame::add_mines(int num_of_m) {
     left = mines;
 }
 
-void Minigame::calculate_grid() {
+void sapper::calculate_grid() {
     for (int i = 0; i < x; i++) {
         for (int j = 0; j < y; j++) {
             if (Cell[i][j]->get_status() != -1) {
@@ -90,11 +83,13 @@ void Minigame::calculate_grid() {
     }
 }
 
-void Minigame::waiting_end() {
+void sapper::waiting_end() {
     ui->label->setText("Проигрышш"); //TODO delete this
+    result_mini_game = false;
+    this->close();
 }
 
-void Minigame::check_zero(int i, int j) {
+void sapper::check_zero(int i, int j) {
    Cell[i][j]->cellClickedforrecursion();
    if (i > 0)
         if (Cell[i - 1][j]->get_status() == 0 && !Cell[i - 1][j]->get_rev())
@@ -125,7 +120,7 @@ void Minigame::check_zero(int i, int j) {
     }
 }
 
-void Minigame::check_win() {
+void sapper::check_win() {
     if (left != 0)
         return;
     for (int i = 0; i < x; i++) {
@@ -136,14 +131,15 @@ void Minigame::check_win() {
         }
     }
     ui->label->setText("Побэда");
+    this->close();
 }
 
-void Minigame::left_decr() {
+void sapper::left_decr() {
     left--;
     ui->lcdNumber->display(left);
 }
 
-void Minigame::left_incr() {
+void sapper::left_incr() {
     left++;
     ui->lcdNumber->display(left);
-}*/
+}

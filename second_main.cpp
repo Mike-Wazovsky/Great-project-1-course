@@ -7,6 +7,9 @@
 #include <cstdlib>
 #include <iostream>
 
+///////////////////////////////////
+extern bool result_mini_game;
+
 int MainOfGame::get_the_number_plot(int k) {
     return std::rand() % k;
 }
@@ -45,16 +48,17 @@ int MainOfGame::second_main() {
         game.move(choice);
 
         //////////////////////////////////////////////////////////////new ->
-        if (game.mini_game() == game.arithmetic_problem) {
-            mini_games::GameArithmeticProblem mini_game(1);
-            if(!mini_game.start_game()) {
-                game.loss_in_mini_game(game.arithmetic_problem);
+        if (game.mini_game() != 0) {
+            if (game.mini_game() == game.arithmetic_problem) {
+                GameArithmeticProblem mini_game(std::rand());
+                mini_game.start_game();
+            } else if (game.mini_game() == game.saper) {
+                /* Saper mini_game; // ?*/
             }
-        } else if (game.mini_game() == game.saper) {
-           /* Saper mini_game; // ?
-            if(!mini_game.start_game()) {
-                game.loss_in_mini_game(game.saper);
-            }*/
+            if (!result_mini_game) {
+                game.loss_in_mini_game(game.mini_game());
+                result_mini_game = true;
+            }
         }
         if (game.is_game_ended()) {
             break;

@@ -1,10 +1,11 @@
 {
   "plot_title": "myth1",
-  "declaring_character": "Вы величайший художник, скульптор и зодчий Афин, знаменитый Дедал, потомок Эрехтея.",
+  "declaring_character": "Вы величайший художник, скульптор и зодчий Афин, знаменитый Дедал, потомок Эрехтея",
   "events": {
     "event1": {
       "is_end": false,
       "text": "Ваша сестра Пердика просит взять сына своего, Тала в подмастерья. Исполните ее просьбу?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event2",
@@ -20,7 +21,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 0,
             "resource4": 0
           }
         }
@@ -29,6 +30,7 @@
     "event2": {
       "is_end": false,
       "text": "Ваш племянник стал учеником другого мастера, и делает большие успехи! Стоит беспокоиться, что Тал может превзойти вас?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -53,6 +55,7 @@
     "event3": {
       "is_end": false,
       "text": "Ваш племянник делает большие успехи! Поговаривают, что Тал может вас превзойти. Вас беспокоит это?",
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -77,13 +80,14 @@
     "event4": {
       "is_end": false,
       "text": "Наставник вашего племянника завидывал его успехам, и решил убить Тала. Ваша сестра Пердика не смогла смириться с потерей сына и обвиняет вас в отказе взять его себе в подмастрерье. Возьмете на себя ответственность и извинитесь?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event6",
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": -10,
             "resource4": 0
           }
         },
@@ -92,7 +96,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 10,
             "resource4": 0
           }
         }
@@ -101,6 +105,7 @@
     "event5": {
       "is_end": false,
       "text": "У вас возникла мысль об убийстве возможного соперника, вашего племянника. Сделаете это?",
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event7",
@@ -125,6 +130,7 @@
     "event6": {
       "is_end": false,
       "text": "Пердика простила вас. Она просит взять в ученики второго своего сына. Исполните ее просьбу?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event3",
@@ -149,13 +155,14 @@
     "event7": {
       "is_end": false,
       "text": "Вас застали в момент совершения преступления! Вы ждете смертельного приговора. Может, сбежать?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event8",
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 20,
             "resource4": 0
           }
         },
@@ -164,7 +171,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": -20,
             "resource4": 0
           }
         }
@@ -173,6 +180,7 @@
     "event8": {
       "is_end": false,
       "text": "Вы успешно сбежали на остров Крит и прожили там долгое время. У вас родился сын Икар. Но жизнь на остове уже наскучила. Может, опять сбежать?",
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event9",
@@ -197,13 +205,14 @@
     "event9": {
       "is_end": false,
       "text": "Вы смастерили крылья из перьев и воска. Это отличное изобретение! Икар летит?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event10",
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 0,
             "resource4": 0
           }
         },
@@ -212,7 +221,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 0,
             "resource4": 0
           }
         }
@@ -221,6 +230,7 @@
     "event10": {
       "is_end": false,
       "text": "Если лететь близко к солнцу, воск расстаит, если близко к воде, промокнут перья. Будете следить за сыном?",
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "die5",
@@ -245,13 +255,14 @@
     "event11": {
       "is_end": false,
       "text": "Ваш сын поднялся слишком высоко, и воск на крыльях расплавился. Икар упал в воду. Броситесь спасать его?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die6",
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 20,
             "resource4": 0
           }
         },
@@ -260,7 +271,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": -20,
             "resource4": 0
           }
         }
@@ -269,6 +280,7 @@
     "event12": {
       "is_end": false,
       "text": "Икар узнал о ваших мыслях о побеге, и его захватила эта идея. Он хочет улететь, даже если вы останетесь. Поможете ему?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event9",
@@ -292,27 +304,27 @@
     },
     "die1": {
       "is_end": true,
-      "text": "Ваша сестра пустила неприятные слухи о вас, и ваш авторитет был уничтожен! Вы умерли в нищите и безызвестности."
+      "text": "Ваша сестра пустила неприятные слухи о вас, и ваш авторитет был уничтожен! Вы умерли в нищите и безызвестности"
     },
     "die2": {
       "is_end": true,
-      "text": "Тал превзошел вас во всем, и никто больше не признает ваше величие! Вы умерли в нищите и безызвестности."
+      "text": "Тал превзошел вас во всем, и никто больше не признает ваше величие! Вы умерли в нищите и безызвестности"
     },
     "die3": {
       "is_end": true,
-      "text": "Вас казнили."
+      "text": "Вас казнили :("
     },
     "die4": {
       "is_end": true,
-      "text": "Вы очень соскучились по сыну и решили пойти за ним. Вы были убиты, когда пересекали море."
+      "text": "Вы очень соскучились по сыну и решили пойти за ним. Вы были убиты, когда пересекали море"
     },
     "die5": {
       "is_end": true,
-      "text": "Вы не заметили погони, и вы с Икаром были убиты."
+      "text": "Вы не заметили погони, и вы с Икаром были убиты"
     },
     "die6": {
       "is_end": true,
-      "text": "Ваши крылья забрызгало волнами, и они промокли! Вы с Икаром утонули."
+      "text": "Ваши крылья забрызгало волнами, и они промокли! Вы с Икаром утонули"
     },
     "die_resource1_high": {
       "is_end": true,
@@ -332,11 +344,11 @@
     },
     "die_resource3_high": {
       "is_end": true,
-      "text": "die_resource3_high"
+      "text": "Для Бога важно спокойствие, ясный и трезвый ум. Вы точно тот, за кого себя выдаете?"
     },
     "die_resource3_low": {
       "is_end": true,
-      "text": "die_resource3_low"
+      "text": "Для Бога важно спокойствие, ясный и трезвый ум. Вы точно тот, за кого себя выдаете?"
     },
     "die_resource4_high": {
       "is_end": true,
@@ -348,11 +360,12 @@
     },
     "win": {
       "is_end": true,
-      "text": "Икар погиб, но вы успешно долетели до Сицилии и прожили там долгую, счастливую и богатую жизнь."
+      "text": "Икар погиб, но вы успешно долетели до Сицилии и прожили там долгую, счастливую и богатую жизнь"
     },
     "chance_to_change_resource1_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_high",
@@ -377,6 +390,7 @@
     "chance_to_change_resource2_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_high",
@@ -401,6 +415,7 @@
     "chance_to_change_resource3_high": {
       "is_end": false,
       "text": "Вы очень устали от всех этих переживаний. Может, пора восстановить силы?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_high",
@@ -425,6 +440,7 @@
     "chance_to_change_resource4_high": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_high",
@@ -449,6 +465,7 @@
     "chance_to_change_resource1_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource1_low",
@@ -473,6 +490,7 @@
     "chance_to_change_resource2_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource2_low",
@@ -497,6 +515,7 @@
     "chance_to_change_resource3_low": {
       "is_end": false,
       "text": "Вы бодры, полны сил и очень активны. Может, замереть на секунду, попробовать поймать дзен, успокоиться?",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource3_low",
@@ -521,6 +540,7 @@
     "chance_to_change_resource4_low": {
       "is_end": false,
       "text": "",
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "die_resource4_low",
@@ -541,26 +561,38 @@
           }
         }
       }
+    },
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "Кажется, эти некоторые были правы..."
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "Кажется, эти некоторые были правы..."
     }
   },
 
   "resources": {
     "resource1": {
+      "name" : "Вера",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource2": {
+      "name" : "Спокойствие",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource3": {
+      "name" : "Усталость",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource4": {
+      "name" : "Состояние",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0

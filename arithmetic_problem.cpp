@@ -1,14 +1,14 @@
 #include "arithmetic_problem.h"
 
-namespace mini_games {
-    bool GameArithmeticProblem::start_game () {
-        it = std::rand() % static_cast<int>(j["number"]);
-        // TODO show problem
-        int ans = 0; // TODO player gives answer
-        return check_answer(ans);
+extern bool result_mini_game;
+
+std::string GameArithmeticProblem::start_game () {
+    it = std::rand() % static_cast<int>(j["number"]);
+    return j[std::to_string(it)]["problem"];
     }
 
-    bool GameArithmeticProblem::check_answer(int ans) {
-        return ans == j[std::to_string(it)]["answer"];
+    void GameArithmeticProblem::check_answer(int ans) {
+        if (ans != j[std::to_string(it)]["answer"]) {
+            result_mini_game = false;
+        }
     }
-}
