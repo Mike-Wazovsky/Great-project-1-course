@@ -21,7 +21,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 0,
             "resource4": 0
           }
         }
@@ -30,7 +30,7 @@
     "event2": {
       "is_end": false,
       "text": "Ваш племянник стал учеником другого мастера, и делает большие успехи! Стоит беспокоиться, что Тал может превзойти вас?",
-      "mini_game" : 2,
+      "mini_game" : 0,
       "routes": {
         "yes": {
           "next_event": "event5",
@@ -87,7 +87,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": -10,
             "resource4": 0
           }
         },
@@ -96,7 +96,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 10,
             "resource4": 0
           }
         }
@@ -105,7 +105,7 @@
     "event5": {
       "is_end": false,
       "text": "У вас возникла мысль об убийстве возможного соперника, вашего племянника. Сделаете это?",
-      "mini_game" : 0,
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event7",
@@ -162,7 +162,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 20,
             "resource4": 0
           }
         },
@@ -171,7 +171,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": -20,
             "resource4": 0
           }
         }
@@ -180,7 +180,7 @@
     "event8": {
       "is_end": false,
       "text": "Вы успешно сбежали на остров Крит и прожили там долгое время. У вас родился сын Икар. Но жизнь на остове уже наскучила. Может, опять сбежать?",
-      "mini_game" : 0,
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "event9",
@@ -212,7 +212,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 0,
             "resource4": 0
           }
         },
@@ -221,7 +221,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": 0,
             "resource4": 0
           }
         }
@@ -230,7 +230,7 @@
     "event10": {
       "is_end": false,
       "text": "Если лететь близко к солнцу, воск расстаит, если близко к воде, промокнут перья. Будете следить за сыном?",
-      "mini_game" : 0,
+      "mini_game" : 2,
       "routes": {
         "yes": {
           "next_event": "die5",
@@ -262,7 +262,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": 10,
+            "resource3": 20,
             "resource4": 0
           }
         },
@@ -271,7 +271,7 @@
           "resource_change": {
             "resource1": 0,
             "resource2": 0,
-            "resource3": -10,
+            "resource3": -20,
             "resource4": 0
           }
         }
@@ -344,11 +344,11 @@
     },
     "die_resource3_high": {
       "is_end": true,
-      "text": "die_resource3_high"
+      "text": "Для Бога важно спокойствие, ясный и трезвый ум. Вы точно тот, за кого себя выдаете?"
     },
     "die_resource3_low": {
       "is_end": true,
-      "text": "die_resource3_low"
+      "text": "Для Бога важно спокойствие, ясный и трезвый ум. Вы точно тот, за кого себя выдаете?"
     },
     "die_resource4_high": {
       "is_end": true,
@@ -564,31 +564,35 @@
     },
     "die_arithmetic_problem": {
       "is_end": true,
-      "text": "die_arithmetic_problem"
+      "text": "Кажется, эти некоторые были правы..."
     },
     "die_saper": {
       "is_end": true,
-      "text": "die_arithmetic_problem"
+      "text": "Кажется, эти некоторые были правы..."
     }
   },
 
   "resources": {
     "resource1": {
+      "name" : "Вера",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource2": {
+      "name" : "Спокойствие",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource3": {
+      "name" : "Усталость",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource4": {
+      "name" : "Состояние",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0

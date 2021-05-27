@@ -94,6 +94,9 @@ std::string Game::start_game() {
     for (std::size_t i = 0; i < resource.size(); i++) {
         resource[i] = j["resources"]["resource" + std::to_string(i + 1)]["start_value"];
     }
+    for (std::size_t i = 0; i < resource.size(); i++) {
+        name_resource[i] = j["resources"]["resource" + std::to_string(i + 1)]["name"];
+    }
     it = "event1";
     return j["declaring_character"];
 }
@@ -132,4 +135,8 @@ void Game::change_plot(int k) {
 
 std::vector<int> Game::resources() {
     return resource;
+}
+
+std::vector<std::string> Game::name_resources() {
+    return name_resource;
 }

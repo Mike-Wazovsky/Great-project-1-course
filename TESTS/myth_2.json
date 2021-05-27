@@ -4,11 +4,11 @@
   "events": {
     "die_arithmetic_problem": {
       "is_end": true,
-      "text": "die_arithmetic_problem"
+      "text": "Кажется, эти некоторые были правы..."
     },
     "die_saper": {
       "is_end": true,
-      "text": "die_arithmetic_problem"
+      "text": "Кажется, эти некоторые были правы..."
     },
     "event1": {
       "is_end": false,
@@ -1877,21 +1877,25 @@
 
   "resources": {
     "resource1": {
+      "name" : "Уважение коллег",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource2": {
+      "name" : "Прогресс в расследовании",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource3": {
+      "name" : "Усталость",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource4": {
+      "name" : "Деньги",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0

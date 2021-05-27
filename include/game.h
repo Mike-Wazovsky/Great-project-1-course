@@ -18,6 +18,7 @@ private:
     const int resource_low = -900;
     const int amount_of_resources = 4;
     std::vector<int> resource;
+    std::vector<std::string> name_resource;
     json j;
     std::string it;
     std::string copy_it;
@@ -26,6 +27,7 @@ public:
     const int saper = 2;
     void loss_in_mini_game(int k);
     std::vector<int> resources();
+    std::vector<std::string> name_resources();
 
     explicit Game(int k) {
         std::string path;
@@ -40,6 +42,7 @@ public:
         // TODO close and exceptions
         plots.close();
         resource.resize(amount_of_resources);
+        name_resource.resize(amount_of_resources);
     }
 
     explicit Game() {
@@ -50,6 +53,7 @@ public:
         plots.close();
         // TODO close and exceptions
         resource.resize(amount_of_resources);
+        name_resource.resize(amount_of_resources);
     }
 
     void to_uml(int k);

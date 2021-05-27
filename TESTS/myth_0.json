@@ -279,21 +279,25 @@
 
   "resources": {
     "resource1": {
+      "name" : "Ничего",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource2": {
+      "name" : "Ничегошеньки",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource3": {
+      "name" : "Совсем ничего",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
     },
     "resource4": {
+      "name" : "Даже не надейся",
       "highest_value": 100,
       "start_value": 50,
       "lowest_value": 0
