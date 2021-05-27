@@ -24,6 +24,8 @@ private slots:
     void on_Button_clicked(bool choice);
 
     void part_of_selection(bool choice);
+
+    void new_resources();
 private:
     Ui::windowwithgame *ui;
 };

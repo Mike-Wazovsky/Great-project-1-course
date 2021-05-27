@@ -18,7 +18,6 @@ SOURCES += \
     gamewindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    minigame.cpp \
     resultwindow.cpp \
     sapermain.cpp \
     saperwindow.cpp \
@@ -40,7 +39,6 @@ HEADERS += \
     global_struct_of_game.h \
     json.hpp \
     mainwindow.h \
-    minigame.h \
     resultwindow.h \
     sapermain.h \
     saperwindow.h \
@@ -55,7 +53,6 @@ FORMS += \
     arithmeticwindow.ui \
     gamewindow.ui \
     mainwindow.ui \
-    minigame.ui \
     resultwindow.ui \
     saperwindow.ui \
     sapper.ui \

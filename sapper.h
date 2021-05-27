@@ -11,9 +11,9 @@ class sapper;
 class sapper : public QDialog
 {
     Q_OBJECT
-    int x = 5;
-    int y = 5;
-    int mines = 3;
+    int x = 14;
+    int y = 14;
+    int mines = 50;
     int left;
 
 public:

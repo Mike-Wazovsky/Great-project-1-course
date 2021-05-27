@@ -45,10 +45,10 @@ void Button::cellClickedforrecursion() {
     setText(QString::fromStdString(std::to_string(status)));
     revealed = true;
     if (status == -1) {
-        //cond.notify_all();
         win->waiting_end();
     }
     status_for_player = status;
+
     win->check_win();
 }
 

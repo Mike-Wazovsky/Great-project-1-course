@@ -36,13 +36,16 @@ void sapper::create_cells() {
         for (int j = 0; j < y; j++) {
             Cell[i][j] = createButton(0, i, j);
             ui->gridLayout_2->addWidget(Cell[i][j], i, j);
+            Cell[i][j]->setFixedSize(30, 30);
         }
     }
 }
 
 void sapper::settings_of_grid() {
-    ui->gridLayout_2->setSpacing(5);
+    //ui->gridLayout_2->setSpacing(5);
     ui->gridLayout_2->setSizeConstraint(QLayout::SetFixedSize);
+    ui->gridLayout_2->setHorizontalSpacing(0);
+    ui->gridLayout_2->setVerticalSpacing(0);
 }
 
 void sapper::add_mines(int num_of_m) {

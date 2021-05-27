@@ -2,6 +2,7 @@
 #define BUTTON_H
 
 #include <QToolButton>
+#include <QColor>
 #include <QMouseEvent>
 //#include "mainwindow.h"
 
@@ -16,6 +17,7 @@ class Button : public QToolButton
     int y = 0;
     bool revealed = false;
     sapper* win =nullptr;
+    QColor num_colors[10];
 protected:
     void mousePressEvent(QMouseEvent *e) override;
     QString enumNameFromValue(const Qt::MouseButton button);
