@@ -124,9 +124,12 @@ void Game::change_plot(int k) {
     else {
         path = "../TESTS/myth_" + std::to_string(k) + ".json";
     }
-    std::cout << "cpp " << path << '\n';
     std::ifstream plots(path);
     plots >> j;
     plots.close();
     // TODO close and exceptions
+}
+
+std::vector<int> Game::resources() {
+    return resource;
 }

@@ -25,6 +25,7 @@ public:
     const int arithmetic_problem = 1;
     const int saper = 2;
     void loss_in_mini_game(int k);
+    std::vector<int> resources();
 
     explicit Game(int k) {
         std::string path;
@@ -34,7 +35,6 @@ public:
         else {
             path = "../TESTS/myth_" + std::to_string(k) + ".json";
         }
-        std::cout << "h1 " << path << '\n';
         std::ifstream plots(path);
         plots >> j;
         // TODO close and exceptions
@@ -45,7 +45,6 @@ public:
     explicit Game() {
         std::string path;
         path = "../TESTS/myth_0.json";
-        std::cout << "h2 " << path << '\n';
         std::ifstream plots(path);
         plots >> j;
         plots.close();

@@ -84,7 +84,8 @@ extern bool result_mini_game;
 
 void Minigame::waiting_end() {
     result_mini_game = false;
-    ui->label->setText("Проигрышш"); //TODO delete this
+    this->close();
+   // ui->label->setText("Проигрышш"); //TODO delete this
 }
 
 void Minigame::check_zero(int i, int j) {

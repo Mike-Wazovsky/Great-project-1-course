@@ -76,7 +76,7 @@ void windowwithgame::on_No_Button_clicked()
         p::game.change_plot(p::number_plot);
 
         p::game.start_game();
-        std::string str = p::view.start_game(p::game.start_game());
+        std::string str = p::view.start_game(p::game.start_game() + '\n' + p::game.get_story());
         ui->label->setText(QString::fromStdString(str));
     }
     else if (p::prepare_for_game) {
@@ -161,7 +161,7 @@ void windowwithgame::part_of_selection(bool choice) {
         p::game.change_plot(p::number_plot);
 
         p::game.start_game();
-        std::string str = p::view.start_game(p::game.start_game());
+        std::string str = p::view.start_game(p::game.start_game() + '\n' + p::game.get_story());
         ui->label->setText(QString::fromStdString(str));
     }
     else {
