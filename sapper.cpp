@@ -1,3 +1,4 @@
+#include <QPixmap>
 #include "sapper.h"
 #include "ui_sapper.h"
 
@@ -16,6 +17,10 @@ sapper::sapper(QWidget *parent) :
     calculate_grid();
     ui->lcdNumber->setDigitCount(5);
     ui->lcdNumber->display(mines);
+    QPixmap pix1(":/img/images/Без названия (1).jpg");
+    int w = ui->label_2->width();
+    int h = ui->label_2->height();
+    ui->label_2->setPixmap(pix1.scaled(w, h));
 }
 
 sapper::~sapper()
@@ -26,8 +31,6 @@ sapper::~sapper()
 Button *sapper::createButton(int k, int i, int j)
 {
     Button *button = new Button(k, i, j, this);
-    //button->oncellClicked(1, 1);
-    //connect(button, SIGNAL(clicked()), button, SLOT(oncellClicked()));
     return button;
 }
 

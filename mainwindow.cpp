@@ -8,6 +8,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap pix2(":/img/images/город.png");
+    int w = ui->label->width();
+    int h = ui->label->height();
+    ui->label->setPixmap(pix2.scaled(w, h));
 }
 
 MainWindow::~MainWindow()
