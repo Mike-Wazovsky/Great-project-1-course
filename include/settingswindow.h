@@ -1,5 +1,4 @@
-#ifndef SETTINGSWINDOW_H
-#define SETTINGSWINDOW_H
+#pragma once
 
 #include <QDialog>
 
@@ -7,19 +6,16 @@ namespace Ui {
 class settingswindow;
 }
 
-class settingswindow : public QDialog
-{
-    Q_OBJECT
+class settingswindow : public QDialog {
+  Q_OBJECT
 
 public:
-    explicit settingswindow(QWidget *parent = nullptr);
-    ~settingswindow();
+  explicit settingswindow(QWidget *parent = nullptr);
+  ~settingswindow();
 
 private slots:
-    void on_pushButton_clicked();
+  void on_pushButton_clicked();
 
 private:
-    Ui::settingswindow *ui;
+  Ui::settingswindow *ui;
 };
-
-#endif // SETTINGSWINDOW_H

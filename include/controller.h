@@ -3,7 +3,5 @@
 #include "game.h"
 
 struct Controller {
-    static bool move();
+  static bool move();
 };
-
-

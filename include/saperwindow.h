@@ -1,5 +1,4 @@
-#ifndef SAPERWINDOW_H
-#define SAPERWINDOW_H
+#pragma once
 
 #include <QDialog>
 
@@ -7,16 +6,13 @@ namespace Ui {
 class SaperWindow;
 }
 
-class SaperWindow : public QDialog
-{
-    Q_OBJECT
+class SaperWindow : public QDialog {
+  Q_OBJECT
 
 public:
-    explicit SaperWindow(QWidget *parent = nullptr);
-    ~SaperWindow();
+  explicit SaperWindow(QWidget *parent = nullptr);
+  ~SaperWindow();
 
 private:
-    Ui::SaperWindow *ui;
+  Ui::SaperWindow *ui;
 };
-
-#endif // SAPERWINDOW_H
