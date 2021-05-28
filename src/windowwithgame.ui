@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Agree</string>
+    <string>Да</string>
    </property>
   </widget>
   <widget class="QPushButton" name="No_Button">
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Disagree</string>
+    <string>Нет</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
