@@ -1,16 +1,13 @@
-#include "controller.h"
+#include "include/controller.h"
 #include <iostream>
 
-bool macaftc::Controller::Move() {
-    std::string s;
-    std::cin >> s;
-    if (s == "Yes") {
-        return true;
-    }
-    else {
-        if (s == "No") {
-            return false;
-        }
-    }
+bool Controller::move() {
+  std::string s;
+  std::cin >> s;
+  if (s[0] == 'y' || s[0] == 'Y') {
+    return true;
+  } else if (s[0] == 'n' || s[0] == 'N') {
     return false;
+  }
+  return false;
 }

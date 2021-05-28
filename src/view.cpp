@@ -1,21 +1,9 @@
-#include "view.h"
+#include "include/view.h"
 #include <iostream>
 #include <string>
 
-void macaftc::View::Start_game() {
-    std::cout << "\n";
-}
+std::string View::start_game(std::string text) { return text; }
 
-void macaftc::View::Start_move(std::string move) {
-    std::cout << move << '\n';
-    std::cout << "What will you choose?\nYes or No?\n";
-}
+std::string View::start_move(std::string move) { return move; }
 
-void macaftc::View::Result_move(std::string result) {
-    std::cout << result << '\n';
-}
-
-void macaftc::View::End_game(std::string end) {
-    std::cout << end << '\n';
-    std::cout << "Game over\n";
-}
+std::string View::end_game(std::string end) { return (end + "\nКонец игры"); }

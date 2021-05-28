@@ -1,0 +1,1904 @@
+{
+  "plot_title": "myth2",
+  "declaring_character": "Вы знаменитый следователь Ленинградского округа города Санкт-Петербурга,\n старик 35 лет, Порфирий Петрович, опытный знаток своего дела",
+  "events": {
+    "die_arithmetic_problem": {
+      "is_end": true,
+      "text": "Вы, оказывается, не так хороши. Предупреждала же учительница по математике, все в жизни может пригодится, эх"
+    },
+    "die_saper": {
+      "is_end": true,
+      "text": "Вы, оказывается, не так хороши. Дальше достойны идти только лучшие"
+    },
+    "event1": {
+      "is_end": false,
+      "text": "Вам было поручено разобраться в одном громком деле – убийство старухи-процентщицы\n Возьмётесь ли вы за него?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event3",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event2": {
+      "is_end": false,
+      "text": "У вас остались мелкие незаконченные дела на работе, которые не терпят отлагательств\n Разобраться сначала с ними?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event4",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event5",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event3": {
+      "is_end": false,
+      "text": "Ну как же так, Порфирий Петрович!\n Не разочаровывайте коллег!\n Может, все-таки возьметесь за дело?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die0",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event4": {
+      "is_end": false,
+      "text": "Разгребая дела, вы наткнулись на одну любопытную статью в местной газете\n Прочитать её?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event6",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event7",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event5": {
+      "is_end": false,
+      "text": "Ну-с, самое время погрузиться в дело об убийстве старушки\n Отправиться прямо сейчас на место преступления?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event8",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event9",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event6": {
+      "is_end": false,
+      "text": "Интересная статейка... \"Обыкновенные люди\", \"необыкновенные\"... \nКто же такой автор этой статьи? Нужно взять это на заметку\n А теперь самое время погрузиться в дело об убийстве старушки\n Отправиться прямо сейчас на место преступления?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event8",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event9",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event7": {
+      "is_end": false,
+      "text": "С остальными делами покончено, самое время погрузиться в дело об убийстве старушки\n Отправиться прямо сейчас на место преступления?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event8",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event9",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event8": {
+      "is_end": false,
+      "text": "Место преступления - дом на набережной канала Грибоедова, путь неблизкий\n Отправиться туда на повозке?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event9": {
+      "is_end": false,
+      "text": "Вы решили не спешить на место преступления, ведь необходимо тщательно подготовиться!\n Вы изучили всю известную на данный момент информацию и только теперь готовы в путь\n Место преступления - дом на набережной канала Грибоедова, путь неблизкий\n Отправиться туда на повозке?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event10": {
+      "is_end": false,
+      "text": "Прибыв на место, возле дома вы встречаетесь со своими коллегами, поговорить с ними?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event11",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event12",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event11": {
+      "is_end": false,
+      "text": "Ваши коллеги узнали что во время убийства в доме работали некие маляры,\n возможно они что-то знают или может даже замешаны в этом... Осмотреть дом старушки?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event13",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die1",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event12": {
+      "is_end": false,
+      "text": "Правильно!\n Необходимо соблюдать социальную дистанцию\n Осмотреть дом старушки?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event13",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die1",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event13": {
+      "is_end": false,
+      "text": "Всё, чтo нажито непoсильным трудoм, всё пoгиблo!\n Комната старухи разграблена\n С полученными сведениями пора вернуться в офис\n Отправиться туда на повозке?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event14",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event14",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die0": {
+      "is_end": true,
+      "text": "Это дело стало бы самым важным в вашей карьере. Жаль, но теперь вы обречены на вечную рутину"
+    },
+    "die1": {
+      "is_end": true,
+      "text": "Один из ваших коллег заметил, что вы не собираетесь осматривать место преступления, это выглядит подозрительно! Вас отстранили от данного дела и ваш авторитет упал. Вы отправляетесь работать в уездный город N Поздравляем!"
+    },
+    "event14": {
+      "is_end": false,
+      "text": "Прибыв на место и обсуждая с коллегами подробности дела, \nвы замечаете как один из посетителей офиса падает в обморок во время вашей беседы\n Совпадение? Не думаю\n Нужно взять это на заметку\n Выяснить кто этот человек?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event15",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event16",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event15": {
+      "is_end": false,
+      "text": "Отпустив беднягу домой, вы узнаете, что это был Родион Романович Раскольников,\n данный гражданин всего-навсего задолжал денег квартирной хозяйке\n Возможно стоит как-нибудь навести справки о нём\n Проследить за Родионом?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event17",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 10,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event16",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event17": {
+      "is_end": false,
+      "text": "Слишком долго и далеко идет Родион и вы вслед за ним\n Вы заметили, что он часто оглядывается… Всё больше подозрений!\n Продолжить слежку?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event18",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 20,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event37",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event18": {
+      "is_end": false,
+      "text": "Вы чуть было не потеряли Родиона из виду, но во время догнали его\n Молодой человек остановился в безлюдном дворе, спрятал что-то под камень\n Выйти из укрытия и поймать парня?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event19",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event39",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event19": {
+      "is_end": false,
+      "text": "Вы вышли из укрытия, но Раскольников заметил вас и побежал\n Бежать за ним?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event20",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 30,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event23",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event20": {
+      "is_end": false,
+      "text": "Он оказался слишком быстрым, а вы увы нет\n Вернуться в тот самый двор и проверить что Раскольников спрятал под камнем?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event21",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die2": {
+      "is_end": true,
+      "text": "Вы решили оставить всё как есть Незнание - сила! Что ж, а война - это мир: только вы вышли со двора, как на вас напали наблюдавшие за вами бандиты\n Вы попрощались со своей шинелью и жизнью. Ну а что же Раскольников спрятал под камнем? Впрочем, это уже совсем другая история"
+    },
+    "event21": {
+      "is_end": false,
+      "text": "Вы обнаружили кошелек с деньгами и драгоценности, скорее всего принадлежащие старухе\n Сомнений быть не может, Родион Романович Раскольников - главный подозреваемый!\n Вы решаете вернуться в офис и узнать его адрес\n Поехать на повозке?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event22",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event22",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event22": {
+      "is_end": false,
+      "text": "Вы прибыли в офис и узнали адрес проживания Раскольникова\n Отправиться к нему на повозке?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "die3",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "die4",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die3": {
+      "is_end": true,
+      "text": "Вы прибыли как раз вовремя и встретили Раскольникова с собранными в путь пожитками в дверях квартиры. Раскольников увидев вас в очередной раз не на шутку испугался, в панике выхватил неизвестно откуда ножик и ткнул вас прямо в сердце. Да, человек смертен, но это было бы еще полбеды. Плохо то, что он иногда внезапно смертен, вот в чем фокус!"
+    },
+    "die4": {
+      "is_end": true,
+      "text": "Вы прекрасно прогулялись по солнечному Петербургу, но придя по адресу никого не обнаружили. Дверь в квартиру открыта нараспашку, ни вещей, ни следов Родиона. Похоже ваши догадки насчёт него подтвердились, но уже слишком поздно: Раскольников сбежал. Ну ничего страшного! В следующий раз действуйте более профессионально!"
+    },
+    "event23": {
+      "is_end": false,
+      "text": "Вы решили не тратить силы на весёлые гонки.\n Проверить что Раскольников спрятал под камнем?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event21",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "win1": {
+      "is_end": true,
+      "text": "4 days later... Вы узнали, где живёт Раскольников и неспеша отправляетесь к нему... Вы сталкиваетесь с Родионом в дверях. Молодой человек вздрагивает на мгновенье, но тут же берёт над собой контроль. Он приглашает вас присесть и садиться рядом. Вы закуриваете папироску и начинаете непростой разговор... Раскольников сам не свой... \"Так... кто же... убил?.. – спросил он, не выдержав, задыхающимся голосом\", \"Как кто убил?... да вы убили, Родион Романыч!\" Это победа!"
+    },
+    "win2": {
+      "is_end": true,
+      "text": "Прибыв по адресу вы сталкиваетесь с Родионом в дверях. Молодой человек вздрагивает на мгновенье, но тут же берёт над собой контроль. Он приглашает вас присесть и садиться рядом. Вы закуриваете папироску и начинаете непростой разговор...Раскольников сам не свой... \"Так... кто же.. убил?.. – спросил он, не выдержав, задыхающимся голосом\", \"Как кто убил?... да вы убили, Родион Романыч!\" Это победа!"
+    },
+    "win3": {
+      "is_end": true,
+      "text": "Не куда спешить!\n Раскольников думает, что вы теперь подозреваете Миколу, так что можно прогуляться неторопясь и обдумать разговор с Родионом... Прибыв по адресу вы сталкиваетесь с Родионом в дверях. Молодой человек вздрагивает на мгновенье, но тут же берёт над собой контроль. Он приглашает вас присесть и садиться рядом. Вы закуриваете папироску и начинаете непростой разговор...Раскольников сам не свой... \"Так... кто же.. убил?.. – спросил он, не выдержав, задыхающимся голосом\", \"Как кто убил?... да вы убили, Родион Романыч!\" Это победа!"
+    },
+    "event16": {
+      "is_end": false,
+      "text": "Вы решили не тратить сейчас время на данного гражданина, ведь\n скоро в офис приведут главных свидетелей (а может и подозреваемых?) - маляров.\n Пока вы их ожидаете сходить за шавермой, что продается напротив офиса?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event24",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event36",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event24": {
+      "is_end": false,
+      "text": "Подойдя к ларьку с шавермой вы замечаете перед \nсобой того самого посетителя офиса, что потерял сознание.\n Опять совпадение? Окликнуть его?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event25",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event27",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event25": {
+      "is_end": false,
+      "text": "Молодой человек обернулся, увидел вас, пробормотал \nчто-то про своё самочувствие и поспешил удалиться.\n Всё-таки он ведёт себя странно... Но война войной, а обед по расписанию.\n Время сделать заказ.\n Какой огромный выбор шавермы! Большая, маленькая, классическая, острая... Взять большую?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event26",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event28",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event26": {
+      "is_end": false,
+      "text": "Классическая или острая? Съешь обычную шаверму — и сказке конец.\n Ты проснёшься в своей постели и поверишь, что это был сон.\n Съешь острую — войдёшь в страну чудес.\n Я покажу тебе, глубока ли кроличья нора.\n Купить острую?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die5",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event29",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die5": {
+      "is_end": true,
+      "text": "Вы купили острую шаверму и съев её вышли из матрицы. Похоже ваш желудок не был готов к такому. Вас отправляют в больницу лечить последствия, вызванные изжогой. К сожалению, пришлось отстранить вас от порученного дела до лучших времён. Поправляйтесь!"
+    },
+    "event27": {
+      "is_end": false,
+      "text": "Вы не стали беспокоить его и дождались своей очереди.\n Время сделать заказ.\n Какой огромный выбор шавермы! Большая, маленькая, классическая, острая... Взять большую?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event26",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event28",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event28": {
+      "is_end": false,
+      "text": "Вы взяли маленькую.\n Классическая или острая?  Съешь обычную шаверму — и сказке конец.\n Ты проснёшься в своей постели и поверишь, что это был сон.\n Съешь острую — войдёшь в страну чудес.\n Я покажу тебе, глубока ли кроличья нора.\n Купить острую?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die5",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event29",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event29": {
+      "is_end": false,
+      "text": "Вы взяли классическую.\n Может взять что-нибудь для своих коллег? Они точно не откажутся от такого.\n Три маленьких классических, по одной каждому. Купить?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event30",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -30
+          }
+        },
+        "no": {
+          "next_event": "event35",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event30": {
+      "is_end": false,
+      "text": "Вы направились со своим богатством обратно в офис, но заметили\n трёх нищих, чьи пустые и грустные глаза смотрели на вашу покупку.\n Может угостить их?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event31",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event34",
+          "resource_change": {
+            "resource1": 10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event31": {
+      "is_end": false,
+      "text": "Вы отдали три купленные для коллег шавермы.\n Нищие поблагодарили вас, их глаза стали живыми и ясными, улыбки окрасили их серые лица.\n Они тотчас принялись есть.\n Вдруг один из них резко нахмурился, его лицо стало серьёзным и он произнес: \n\"Я был там, Порфирий Петрович.\n Я был там 3000 лет назад... когда Родион Раскольников обрёл Топор.\n Я видел сам, как старуха-процентщица дала слабину.\n Тот парень, что стоял с вами у ларька... Он убийца!\" Вы не на шутку перепугались и удивились.\n Откуда нищий знает как вас зовут? Что за бред он несёт? \nРасспросить его поподробнее?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event32",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event33",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event32": {
+      "is_end": false,
+      "text": "Только вы собирались задать нищему вопрос, как он вскочил, держа в руке \nещё недоеденную шаверму, и с криками: \"Моя прелесть!\" убежал в закат.\n Другие два его сотрапезника ничего не смогли вам сообщить и не понимали о чём идёт речь.\n Странно это всё, но пора возвращаться назад.\n Вернувшись в офис вы собрали своих коллег и к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event33": {
+      "is_end": false,
+      "text": "Сумасшедшие для Питера не редкость!\n Вы решили не тратить своё время, ведь пора возвращаться назад.\n Вернувшись в офис вы собрали своих коллег и к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event34": {
+      "is_end": false,
+      "text": "Не время для благотворительности!\n Пора возвращаться назад.\n Вернувшись в офис вы отобедали вместе со своими коллегами \nи к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event35": {
+      "is_end": false,
+      "text": "Копейка рубль бережёт!\n И время - деньги! Пора возвращаться назад.\n Вернувшись в офис вы отобедали, собрали своих \nколлег и к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event36": {
+      "is_end": false,
+      "text": "Пока вы ожидали свидетелей, вы поделились с коллегами своими мыслями насчёт дела.\n Спустя некоторое время к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event37": {
+      "is_end": false,
+      "text": "Вы решили не тратить сейчас время на данного гражданина, ведь с минуты на минуту \nв офис приведут главных свидетелей (а может и подозреваемых?) - маляров.\n Отправиться в офис на повозке?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event38",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event38",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event38": {
+      "is_end": false,
+      "text": "Вернувшись в офис вы собрали своих коллег и к вам в кабинет привели тех самых маляров.\n Начать разговор?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event42",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event41",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event39": {
+      "is_end": false,
+      "text": "Вы выждали время и Раскольников благополучно ушел.\n Проверить что Раскольников спрятал под камнем?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event40",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 20,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event40": {
+      "is_end": false,
+      "text": "Вы выждали время и Раскольников благополучно ушел.\n Проверить что Раскольников спрятал под камнем?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event38",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -10
+          }
+        },
+        "no": {
+          "next_event": "event38",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event41": {
+      "is_end": false,
+      "text": "Вашим коллегам показалось это странным, ведь обычно вы охотник до разного рода болтовни.\n Хватит лениться, пора выполнять свою работу!\n В разговоре вы заметили что один из маляров - Миколка-красильщик ведёт себя неуверенно, \nего глаза постоянно бегают из стороны в сторону, будто он что-то скрывает.\n Спросить его об этом?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event43",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event44",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event42": {
+      "is_end": false,
+      "text": "В разговоре вы заметили что один из маляров - Миколка-красильщик ведёт себя \nнеуверенно, его глаза постоянно бегают из стороны в сторону, будто он что-то скрывает.\n Спросить его об этом?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event43",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event44",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event43": {
+      "is_end": false,
+      "text": "Миколка сознаётся что нашёл серёжки и присвоил их себе.\n Он рассказывает вам всё что знает о том роковом дне убийства.\n Возможно Миколка не только вор, но и убийца? Заставить его признаться в убийстве?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event45",
+          "resource_change": {
+            "resource1": -10,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event46",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event44": {
+      "is_end": false,
+      "text": "Вы решили не акцентировать внимание на этом и продолжили разговор.\n К сожалению ничего полезного вы не узнали, а скорее наоборот больше запутались.\n Рабочий день подходит к концу.\n Самое время отправиться домой.\n Вперёд?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event48",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event47",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event45": {
+      "is_end": false,
+      "text": "Оказывается это было не так сложно.\n В страхе Миколка сознаётся в убийстве.\n В этом признании вы видите его желание искупить грехи.\n Ну-с... Похоже дело закрыто?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die6",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event46",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die6": {
+      "is_end": true,
+      "text": "Благодаря вашему хорошему дару убеждения Миколка отправился на каторгу в Сибирь. Ваши способности хорошо оценило вышестоящее начальство и повысило вас в должности. Поздравляем! Теперь вы будете выбивать признания из невиновных!"
+    },
+    "event46": {
+      "is_end": false,
+      "text": "Вы читаете людей как открытую книгу и понимаете что этот паренёк не может быть убийцей.\n Вы довольны, что он сознался в содеянной краже и раскаивается, но к сожалению ничего \nнового из разговора со свидетелями вы не узнали, а скорее наоборот больше запутались.\n Рабочий день подходит к концу.\n Самое время отправиться домой.\n Вперёд?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event48",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event47",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event47": {
+      "is_end": false,
+      "text": "Раз не вперёд, тогда назад - домой!\n Вы вернулись домой, почитали газеты, поужинали.\n Слишком рано чтоб идти спать, тем более завтра у вас выходной... Хм... \nУ вас имеется в собственности неплохая повозка да лошадь.\n Может потаксовать для души?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "event49",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
+          }
+        },
+        "no": {
+          "next_event": "event50",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event48": {
+      "is_end": false,
+      "text": "Вы вернулись домой, почитали газеты, поужинали.\n Слишком рано чтоб идти спать, тем более завтра у вас выходной... Хм...\n У вас имеется в собственности неплохая повозка да лошадь.\n Может потаксовать для души?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event49",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
+          }
+        },
+        "no": {
+          "next_event": "event51",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event49": {
+      "is_end": false,
+      "text": "Сегодня вечером было не так много клиентов, но всё же вы заработали неплохие деньги.\n На часах полночь.\n Вернуться домой и лечь спать?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event50",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": -10,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event52",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -10,
+            "resource3": 10,
+            "resource4": 10
+          }
+        }
+      }
+    },
+    "event50": {
+      "is_end": false,
+      "text": "Прибыв домой, вы легли на кровать и тотчас уснули... Настало утро.\n Проснуться?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event53",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event54",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event51": {
+      "is_end": false,
+      "text": "Что за мысли... Лучше хорошенько отдохнуть перед рабочим днём.\n Вы легли на кровать и стали читать книжку, но спустя \nчетверть часа не заметили как уснули... Настало утро.\n Проснуться?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event53",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event54",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event52": {
+      "is_end": false,
+      "text": "Вы решили поработать ещё пару часов и не пожалели об этом!\n Вы отлично заработали! Но всё же пора возвращаться назад.\n Прибыв домой, вы легли на кровать и тотчас уснули... Настало утро.\n Проснуться?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event53",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event54",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event53": {
+      "is_end": false,
+      "text": "Проснувшись и позавтракав, к вам ни с того, ни с сего заявляется Разумихин - \nваш дальний родственник и... кто бы вы думали? И тот самый молодой человек, что потерял сознание у вас в офисе - \nРодион Романович Раскальников.\n Интересно, что они хотят... Побеседовать с Родионом?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event55",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die7",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event54": {
+      "is_end": false,
+      "text": "Вы решили поспать подольше.\n До обеда. Во входных дверях вы находите записку. Оказывается, пока вы спали \nк вам заезжал Разумихин - ваш дальний родственник и его друг, у которого было какое-то срочное \nдело к вам. В записке Разумихин просил заглянуть вас в офис, где уже ждёт вас его друг. \nВперёд?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "event60",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die9",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die7": {
+      "is_end": true,
+      "text": "Вы не собираетесь разговаривать ни с Раскольниковым, ни с Разумихиным. Что им вообще надо? У вас же выходной! Вы гоните их прочь из квартиры и наслаждаетесь тишиной и спокойствием. Вот и сказочки конец, а кто слушал - молодец!"
+    },
+    "event55": {
+      "is_end": false,
+      "text": "В ходе беседы с Раскольниковым вы на 100% убеждаетесь в его виновности в произошедшем убийстве!\n Предъявить ему сейчас свои обвинения?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die8",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event56",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -10,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die8": {
+      "is_end": true,
+      "text": "Раскольников, услышав то, что вы ему сказали, трясётся в страхе и достает откуда-то топор. Он всегда, когда собирается к кому-то приехать поговорить, берёт топор с собой??? Хороший собеседник... Разумихин в шоке от увиденного, а вы в раю (ну или чуть пониже, кто вас знает)"
+    },
+    "event56": {
+      "is_end": false,
+      "text": "Раскольников хочет забрать свои вещи, которые он закладывал у покойной старушки-процентщицы.\n Что ж, вы с радостью приглашаете его к себе завтра в офис  чтобы подать заявление о выкупе вещей.\n Вы заканчиваете беседу, провожаете гостей и наслаждаетесь своим выходным днём. \nНа следующий день будучи уже в офисе на работе к вам заявляется в назначенный час ваш новый друг.\n Начать разговор?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event57",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event59",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event57": {
+      "is_end": false,
+      "text": "Вы даёте Раскольникову лист бумаги для написания заявления и начинаете разговор.\n Вам уже не особо важны все детали разговора, так как уверены в его виновности, \nно интересно послушать что расскажет вам ваш собеседник. \nВдруг к вам в кабинет врывается маляр Микола и сознается в убийстве старухи.\n Он срывает ваш разговор с Раскольниковым, и вы отправляете Родиона домой.\n Выслушав Миколу, вы отпускаете и его. Вернуться к своим делам?",
+      "mini_game" : 2,
+      "routes": {
+        "yes": {
+          "next_event": "win1",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event58",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event58": {
+      "is_end": false,
+      "text": "Нужно скорее действовать!\n Вы узнаете адрес Раскольникова и решаете отправиться к нему прямо сейчас. \nПоехать на повозке?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "win2",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "win3",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event59": {
+      "is_end": false,
+      "text": "Раскольников начинает разговор сам. \nВы даёте Раскольникову лист бумаги для написания заявления и вступаете в разговор. \nВам уже не особо важны все детали разговора, \nтак как уверены в его виновности, но интересно послушать что расскажет вам ваш собеседник.\n Вдруг к вам в кабинет врывается маляр Микола и сознается в убийстве старухи. \nОн срывает ваш разговор с Раскольниковым, и вы отправляете Родиона домой. \nВыслушав Миколу, вы отпускаете и его. \nВернуться к своим делам?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "win1",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event58",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die9": {
+      "is_end": true,
+      "text": "Разве вы не знаете, что друг Разумихина, который хотел поговорить с вами - это Раскольников, который и есть виновный в убийстве? Быть может вы не читали эту книгу, а может всеми силами пытаетесь избежать разговора с Раскольниковым. Попробуйте ещё разок!"
+    },
+    "event60": {
+      "is_end": false,
+      "text": "Вы неспеша приходите в офис, и видите, что друг вашего родственника - \nэто тот самый парень, что терял у вас в офисе сознание - \nРодион Романович Раскольников собственной персоной. \nОн сообщает, что хочет забрать свои вещи, которые он закладывал у \nпокойной старушки-процентщицы. Начать разговор?",
+      "mini_game" : 1,
+      "routes": {
+        "yes": {
+          "next_event": "event61",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event62",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event61": {
+      "is_end": false,
+      "text": "В ходе беседы с Раскольниковым вы на 100% убеждаетесь\n в его виновности в произошедшем убийстве!\n Предъявить ему сейчас свои обвинения?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event63",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "event62": {
+      "is_end": false,
+      "text": "Раскольников начинает разговор сам. В ходе беседы с Раскольниковым вы \nна 100% убеждаетесь в его виновности в произошедшем убийстве!\n Предъявить ему сейчас свои обвинения?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die10",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event63",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die10": {
+      "is_end": true,
+      "text": "Раскольников, услышав то, что вы ему сказали, трясётся в страхе и достает откуда-то топор. Он всегда, когда собирается к кому-то приехать поговорить, берёт топор с собой?? Хороший собеседник... До свиданья друг мой, до свиданья!"
+    },
+    "event63": {
+      "is_end": false,
+      "text": "Вы даёте Раскольникову лист бумаги для написания заявления о \nвыкупе вещей и продолжаете вести с ним разговор. \nВам уже не особо важны все детали разговора, так как уверены в \nего виновности, но интересно послушать что расскажет вам ваш собеседник. \nВдруг к вам в кабинет врывается маляр Микола и сознается в убийстве старухи. \nОн срывает ваш разговор с Раскольниковым, и вы отправляете Родиона домой. \nВыслушав Миколу, вы отпускаете и его.\n Вернуться к своим делам?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "win1",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "event58",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "die_resource1_high": {
+      "is_end": true,
+      "text": "У вас чудесные отношения с коллегами! Начальство считает вас лучшим работником и вообще сладкой булочкой. Вы достойны большего, чем разбираться в убийстве какой-то никчемной старухи. Этим делом займется кто-то другой, а у вас как раз появится время насладиться своей неотразимостью"
+    },
+    "die_resource1_low": {
+      "is_end": true,
+      "text": "Вы совсем не уважаете своих коллег! Пропускаете общие посиделки, не ходите со всеми на двухминутку ненависти. Еще немножко, и престаненете верить, что важды два — пять. Вас вынудили перейти в другой отдел. Дела делами, но о людях забывать не стоит!"
+    },
+    "die_resource2_high": {
+      "is_end": true,
+      "text": "Вам показалось, что вы знаете о деле всё необходимое, все доказатества у вас на руках, пазл, наконец, сошелся. Увы, но вашему начальству так не показалось. Очевидно, вы незаслуженно занимаете свою должность. Этим преинтереснейшим делом займется кто-то более достойный. Но вы, Порфирий Петрович, главное не унывайте, не унывайте"
+    },
+    "die_resource2_low": {
+      "is_end": true,
+      "text": "Ваше расследование продвигается слишком медленно. Некий господин из Англии в интересной шляпе уже сумел разобраться во всех обстоятельствах убийства. Ваше начальство считет, что вы незаслуженно занимаете свою должность. Порфирий Петрович, главное не унывайте, не унывайте"
+    },
+    "die_resource3_high": {
+      "is_end": true,
+      "text": "Вы так устали, что буквально валитесь с ног. Решено. Не выходи из комнаты, не совершай ошибку. Ведь здесь есть мягкая, теплая, манящая кровать. Вы пришли к выводу, что проспать всю свою жизнь не такая уж и плохая идея. Ну что ж, спокойной ночи"
+    },
+    "die_resource3_low": {
+      "is_end": true,
+      "text": "Вы бодры, веселы. Бодры нужно говорить бодрее, но бодрее уже некуда. Энергия расприрает вас изнутри. Распирает, распирает. Упс, кажется, расперла. Чего только не бывает в нашем мире. А вы чего здесь делаете? История-то уже кончилась!"
+    },
+    "die_resource4_high": {
+      "is_end": true,
+      "text": "Монеточки буквально валятся у вас из карманов! Как бы кто не позарился на них. Следует быть осторожным, а то видали, чего в газетах пишут? На днях одного такого ограбили в темном переулке. Ни денег, ни шинели, ни жизни. Погодите-ка... Порфирий Петрович, так это же о вас!"
+    },
+    "die_resource4_low": {
+      "is_end": true,
+      "text": "У вас совсем не осталось средств на существование. Вот почему у кого-то есть всё и с излишествами, а у кого-то совсем ничего. Вот даже взять это проклятую старуху-процентщицу. Почему мы, честные люди, должны работать всю свою жизнь, а она абсолютно незаслуженно владела такими богатсвами? Где-то ведь и у вас был топорик..."
+    },
+    "chance_to_change_resource1_high": {
+      "is_end": false,
+      "text": "У вас завидные отношения с коллегами, но вот закрадывается мысль немного им напакастить. \nПойдете на поводу у ваших темных мыслей и желаний?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_high": {
+      "is_end": false,
+      "text": "Дела на удивление идут слишком хорошо. \nМожно выкроить время и немного расслабиться, помечтать о вечном.\n Как считаете?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_high": {
+      "is_end": false,
+      "text": "Мир вокруг плывет, и отнюдь не из-за жары, или какие там еще причины могут быть. \nВы слишком устали. Может, пустить все на самотек? \nОт часика отдаха никто не пострадает",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_high": {
+      "is_end": false,
+      "text": "В последнее время вы разжились неплохими деньгами.\n Слышал, детям из бедной семьи Мармеладовых не помешала бы помощь. \nЧто вы об этом думаете, о милый, щедрый, добрый и благодушный следователь? \nПоможете несчастным?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_high",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource1_low": {
+      "is_end": false,
+      "text": "Еще немного и ваши коллеги вас возненавидят. \nМожет, стоит угостить их тыквенным пирогом, сливочным пивом?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": -1000,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource1_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource2_low": {
+      "is_end": false,
+      "text": "Очень тяжко нынче работать. Расследование продвигается как черепаха, \nбезуспешно пытающаяся уползти от голодного Робинзоно Крузо. \nВроде, стараешься, стараешься, а ничего не выходит. \nНе хотите попросить помощи у Большого Брата",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": -1000,
+            "resource3": 0,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource2_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource3_low": {
+      "is_end": false,
+      "text": "Такое чувство, что каждая клеточка организма ощущает дикий прилив энергии. \nВам бы пробежаться, попрыгать, помахать коленями в позе бабочка.\n Что вы об этом думаете?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": -1000,
+            "resource4": 0
+          }
+        },
+        "no": {
+          "next_event": "die_resource3_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    },
+    "chance_to_change_resource4_low": {
+      "is_end": false,
+      "text": "Эх, был бы кошелек холодильником, в нем бы неприменно повесилась мышь. Но что за удача!\n Вы заметили совершенно точно никому не принадлежащую банкноту. Возьмете себе?",
+      "mini_game" : 0,
+      "routes": {
+        "yes": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": -1000
+          }
+        },
+        "no": {
+          "next_event": "die_resource4_low",
+          "resource_change": {
+            "resource1": 0,
+            "resource2": 0,
+            "resource3": 0,
+            "resource4": 0
+          }
+        }
+      }
+    }
+  },
+
+  "resources": {
+    "resource1": {
+      "name" : "Уважение коллег",
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource2": {
+      "name" : "Прогресс в расследовании",
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource3": {
+      "name" : "Усталость",
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    },
+    "resource4": {
+      "name" : "Деньги",
+      "highest_value": 100,
+      "start_value": 50,
+      "lowest_value": 0
+    }
+  }
+}

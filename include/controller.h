@@ -1,13 +1,7 @@
-#ifndef PROJECT_CONTROLLER_H
-#define PROJECT_CONTROLLER_H
+#pragma once
 
 #include "game.h"
-#include "plot.h"
 
-namespace macaftc {
-    struct Controller {
-        static bool Move();
-    };
-}
-
-#endif //PROJECT_CONTROLLER_H
+struct Controller {
+  static bool move();
+};
