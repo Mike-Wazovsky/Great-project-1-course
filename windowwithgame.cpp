@@ -152,10 +152,6 @@ void windowwithgame::on_Button_clicked(bool choice) {
             }
             if (p::game.is_game_ended()) {
                 this->close();
-                //resultwindow result;
-                //result.setModal(true);
-                //result.exec();
-                // TODO better to make a window with result
                 std::string result_of_game = p::view.end_game(p::game.get_story());
                 QMessageBox::about(this, "result of story", QString::fromStdString(result_of_game));
                 MainWindow main;

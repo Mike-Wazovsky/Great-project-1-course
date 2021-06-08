@@ -23,6 +23,10 @@ void Button::mineCheck() {
 }
 
 void Button::oncellClicked() {
+    if (win->get_first_move()) {
+        win->add_mines(win->get_mines(), x, y);
+        win->false_first_move();
+    }
     if (status_for_player == -1) {
         win->left_incr();
     }

@@ -13,8 +13,8 @@ sapper::sapper(QWidget *parent) :
     //QGridLayout self();
     settings_of_grid();
     create_cells();
-    add_mines(mines);
-    calculate_grid();
+    //add_mines(mines);
+    //calculate_grid();
     ui->lcdNumber->setDigitCount(5);
     ui->lcdNumber->display(mines);
     QPixmap pix1(":/img/images/Без названия (1).jpg");
@@ -51,16 +51,17 @@ void sapper::settings_of_grid() {
     ui->gridLayout_2->setVerticalSpacing(0);
 }
 
-void sapper::add_mines(int num_of_m) {
+void sapper::add_mines(int num_of_m, int coord_x, int coord_y) {
     while (num_of_m > 0) {
         int i = rand() % x;
         int j = rand() % y;
-        if (Cell[i][j]->get_status() != -1) {
+        if (Cell[i][j]->get_status() != -1 && (i != coord_x || j != coord_y)) {
             Cell[i][j]->changeStatus(-1);
             num_of_m--;
         }
     }
     left = mines;
+    calculate_grid();
 }
 
 void sapper::calculate_grid() {
@@ -148,4 +149,16 @@ void sapper::left_decr() {
 void sapper::left_incr() {
     left++;
     ui->lcdNumber->display(left);
+}
+
+bool sapper::get_first_move() {
+    return first_move;
+}
+
+int sapper::get_mines() {
+    return mines;
+}
+
+void sapper::false_first_move() {
+    first_move = false;
 }
